@@ -1,0 +1,2304 @@
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[         0,          0]
+NotebookDataLength[    131476,       2303]
+NotebookOptionsPosition[    130863,       2275]
+NotebookOutlinePosition[    131224,       2291]
+CellTagsIndexPosition[    131181,       2288]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"s3", "=", 
+  RowBox[{"NDSolve", "[", 
+   RowBox[{
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{
+       RowBox[{
+        RowBox[{"D", "[", 
+         RowBox[{
+          RowBox[{"A", "[", 
+           RowBox[{"x", ",", "y"}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"x", ",", "2"}], "}"}]}], "]"}], "+", 
+        RowBox[{"D", "[", 
+         RowBox[{
+          RowBox[{"A", "[", 
+           RowBox[{"x", ",", "y"}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"y", ",", "2"}], "}"}]}], "]"}], "+", 
+        RowBox[{"25", " ", 
+         RowBox[{"A", "[", 
+          RowBox[{"x", ",", "y"}], "]"}]}]}], "\[Equal]", "0"}], ",", 
+      RowBox[{
+       RowBox[{
+        RowBox[{"D", "[", 
+         RowBox[{
+          RowBox[{"B", "[", 
+           RowBox[{"x", ",", "y"}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"x", ",", "2"}], "}"}]}], "]"}], "+", 
+        RowBox[{"D", "[", 
+         RowBox[{
+          RowBox[{"B", "[", 
+           RowBox[{"x", ",", "y"}], "]"}], ",", 
+          RowBox[{"{", 
+           RowBox[{"y", ",", "2"}], "}"}]}], "]"}], "+", 
+        RowBox[{"25", " ", 
+         RowBox[{"B", "[", 
+          RowBox[{"x", ",", "y"}], "]"}]}]}], "\[Equal]", "0"}], ",", 
+      RowBox[{
+       RowBox[{"A", "[", 
+        RowBox[{"0", ",", "y"}], "]"}], "\[Equal]", 
+       RowBox[{"-", "1"}]}], ",", 
+      RowBox[{
+       RowBox[{"A", "[", 
+        RowBox[{"2", ",", "y"}], "]"}], "\[Equal]", "1"}], ",", 
+      RowBox[{
+       RowBox[{"A", "[", 
+        RowBox[{"x", ",", "0"}], "]"}], "\[Equal]", "0"}], ",", 
+      RowBox[{
+       RowBox[{"A", "[", 
+        RowBox[{"x", ",", "1"}], "]"}], "\[Equal]", "0"}], ",", 
+      RowBox[{
+       RowBox[{"B", "[", 
+        RowBox[{"0", ",", "y"}], "]"}], "\[Equal]", "0"}], ",", 
+      RowBox[{
+       RowBox[{"B", "[", 
+        RowBox[{"2", ",", "y"}], "]"}], "\[Equal]", "0"}], ",", 
+      RowBox[{
+       RowBox[{"B", "[", 
+        RowBox[{"x", ",", "0"}], "]"}], "\[Equal]", 
+       RowBox[{"-", "1"}]}], ",", 
+      RowBox[{
+       RowBox[{"B", "[", 
+        RowBox[{"x", ",", "1"}], "]"}], "\[Equal]", "1"}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"A", "[", 
+       RowBox[{"x", ",", "y"}], "]"}], ",", 
+      RowBox[{"B", "[", 
+       RowBox[{"x", ",", "y"}], "]"}]}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"x", ",", "0", ",", "2"}], "}"}], ",", 
+    RowBox[{"{", 
+     RowBox[{"y", ",", "0", ",", "1"}], "}"}]}], "]"}]}]], "Input",
+ CellChangeTimes->{{3.758370434950693*^9, 3.7583704828027763`*^9}, {
+  3.758370566763516*^9, 3.758370578057638*^9}, {3.7583720191849413`*^9, 
+  3.758372027045784*^9}, {3.758372078346973*^9, 3.7583721123480253`*^9}, {
+  3.758372151745838*^9, 3.7583721547495613`*^9}, {3.758372264816951*^9, 
+  3.7583722690333*^9}, {3.758372309217533*^9, 3.7583723131004763`*^9}, {
+  3.758372616265582*^9, 3.75837262001342*^9}, {3.75837303675239*^9, 
+  3.7583730495366917`*^9}}],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{"{", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"A", "[", 
+      RowBox[{"x", ",", "y"}], "]"}], "\[Rule]", 
+     RowBox[{
+      TagBox[
+       TemplateBox[{RowBox[{
+           StyleBox[
+            TagBox["InterpolatingFunction", "SummaryHead"], 
+            "NonInterpretableSummary"], 
+           StyleBox["[", "NonInterpretableSummary"], 
+           DynamicModuleBox[{Typeset`open$$ = False}, 
+            PanelBox[
+             PaneSelectorBox[{False -> GridBox[{{
+                   PaneBox[
+                    ButtonBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "SquarePlusIconMedium"]], 
+                    ButtonFunction :> (Typeset`open$$ = True), Appearance -> 
+                    None, Evaluator -> Automatic, Method -> "Preemptive"], 
+                    Alignment -> {Center, Center}, ImageSize -> 
+                    Dynamic[{
+                    Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification]}]], 
+                   GraphicsBox[{{
+                    GrayLevel[0.6], 
+                    AbsolutePointSize[5], 
+                    PointBox[{1, 1}], 
+                    PointBox[{2, 4}], 
+                    PointBox[{3, 2}], 
+                    PointBox[{4, 3}]}, {{}, {}, {
+                    AbsoluteThickness[1], 
+                    Opacity[1.], 
+                    LineBox[CompressedData["
+1:eJwBMQPO/CFib1JlAgAAADIAAAACAAAA4ScLwZmZ6T/ACPskWpOYv4AjHgZ5
+3Os/cnpQh5xu1j/qWn1XCVDuP5K7ih5ptuc/r+pongFN8D/CUK87BHLxP46d
+cUQ/bPE/ujUa8/qu9j9TbqBw1aPyP/TWyyAhFfw/neDJZqDG8z+QAqdF9GsA
+QM1wGePDAfU/VsVD/9nXAkCidscSKDf2P6Bp73exDQVA/B1wDMFX9z+TpM3k
+wfUGQDzjPoyykPg/7M3Z+O7ZCEABSgjW2LT5P3pl9LwNcgpAbCYw0z/T+j86
+ypori9cLQL0gflb/Cfw/lpOs9xIqDUCTvMaj8yv9Pw4alcoYNg5AT3Y1d0Bm
+/j+pB2LLtyIPQLClAv7Nmv8/NnA5bbjSD0BLO2UnSF0AQFrcILXmpw9AsTLc
+klX5AED+sDHBQukOQNp6UGP9igFAbZ+lR/sLDkD10dd20SgCQNHi3Mj38wxA
+42MO5MXDAkAZdr6AZb8LQJRGQrZUVANArv7zEMKHCkA4OInLD/EDQLBlMO3M
+IglAnnrNRWWDBEA3d8OX6skHQNf3wBnbEgVAD3D3ndNyBkADhMcwfa4FQHOK
+7Wak/wRA8WDLrLk/BkC/MhCgYawDQNJM4msi3QZAwss/TmVLAkCGc6iEq3cH
+QIsIg92+BgFA/OprAs8HCECrPCvgePD/P2VxQsMepAhAKXVLE0Xg/j+RSBbp
+CDYJQPRz0a7WJ/4/kFqZaBPFCUDN4sX5uLj9P4J7LytKYApAvh1MbRmT/T82
+7cJSG/EKQHzT1YZwwv0/3W1pvRiOC0B2LZ/10lT+P0c/DY2wIAxAVrX8MJA7
+/z+DS2C2aLAMQElWzbMzPQBAsmbGIk1MDUCi9bAadCABQKTSKfTL3Q1AYexd
+q+EpAkCJTaAId3sOQFyS/ndEhgNAQAPGdkIWD0BHWcLdahwFQLoJ6Umopg9A
+vd1CiejSBkCTjw8wnSEQQPiVkXD08QhAq0KpbbNqEEBsk2Azxi4LQCyTGthZ
+shBAYCBYjj+gDUAnaxVkFgARQMwfdA9ySBBAg+uOIqBIEUBj/5rHgMsRQNFn
+q5SZmRFAL++xNeOlE0Dwt3AR
+                    "]]}}}, AspectRatio -> 1, Axes -> 
+                    False, Background -> GrayLevel[0.93], Frame -> True, 
+                    FrameStyle -> Directive[
+                    GrayLevel[0.7], 
+                    Thickness[Tiny]], FrameTicks -> None, 
+                    ImageSize -> {Automatic, 
+                    Dynamic[
+                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])]}, PlotRange -> {{0, 5}, {0, 5}}], 
+                   GridBox[{{
+                    RowBox[{
+                    TagBox["\"Domain: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"0.`", ",", "2.`"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0.`", ",", "1.`"}], "}"}]}], "}"}], 
+                    "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"Output: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"scalar\"", "SummaryItem"]}]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+                    AutoDelete -> False, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                    BaseStyle -> {
+                    ShowStringCharacters -> False, NumberMarks -> False, 
+                    PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+                 GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False,
+                  GridBoxItemSize -> {
+                  "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                 BaselinePosition -> {1, 1}], True -> GridBox[{{
+                   PaneBox[
+                    ButtonBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "SquareMinusIconMedium"]], 
+                    ButtonFunction :> (Typeset`open$$ = False), Appearance -> 
+                    None, Evaluator -> Automatic, Method -> "Preemptive"], 
+                    Alignment -> {Center, Center}, ImageSize -> 
+                    Dynamic[{
+                    Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification]}]], 
+                   GraphicsBox[{{
+                    GrayLevel[0.6], 
+                    AbsolutePointSize[5], 
+                    PointBox[{1, 1}], 
+                    PointBox[{2, 4}], 
+                    PointBox[{3, 2}], 
+                    PointBox[{4, 3}]}, {{}, {}, {
+                    AbsoluteThickness[1], 
+                    Opacity[1.], 
+                    LineBox[CompressedData["
+1:eJwBMQPO/CFib1JlAgAAADIAAAACAAAA4ScLwZmZ6T/ACPskWpOYv4AjHgZ5
+3Os/cnpQh5xu1j/qWn1XCVDuP5K7ih5ptuc/r+pongFN8D/CUK87BHLxP46d
+cUQ/bPE/ujUa8/qu9j9TbqBw1aPyP/TWyyAhFfw/neDJZqDG8z+QAqdF9GsA
+QM1wGePDAfU/VsVD/9nXAkCidscSKDf2P6Bp73exDQVA/B1wDMFX9z+TpM3k
+wfUGQDzjPoyykPg/7M3Z+O7ZCEABSgjW2LT5P3pl9LwNcgpAbCYw0z/T+j86
+ypori9cLQL0gflb/Cfw/lpOs9xIqDUCTvMaj8yv9Pw4alcoYNg5AT3Y1d0Bm
+/j+pB2LLtyIPQLClAv7Nmv8/NnA5bbjSD0BLO2UnSF0AQFrcILXmpw9AsTLc
+klX5AED+sDHBQukOQNp6UGP9igFAbZ+lR/sLDkD10dd20SgCQNHi3Mj38wxA
+42MO5MXDAkAZdr6AZb8LQJRGQrZUVANArv7zEMKHCkA4OInLD/EDQLBlMO3M
+IglAnnrNRWWDBEA3d8OX6skHQNf3wBnbEgVAD3D3ndNyBkADhMcwfa4FQHOK
+7Wak/wRA8WDLrLk/BkC/MhCgYawDQNJM4msi3QZAwss/TmVLAkCGc6iEq3cH
+QIsIg92+BgFA/OprAs8HCECrPCvgePD/P2VxQsMepAhAKXVLE0Xg/j+RSBbp
+CDYJQPRz0a7WJ/4/kFqZaBPFCUDN4sX5uLj9P4J7LytKYApAvh1MbRmT/T82
+7cJSG/EKQHzT1YZwwv0/3W1pvRiOC0B2LZ/10lT+P0c/DY2wIAxAVrX8MJA7
+/z+DS2C2aLAMQElWzbMzPQBAsmbGIk1MDUCi9bAadCABQKTSKfTL3Q1AYexd
+q+EpAkCJTaAId3sOQFyS/ndEhgNAQAPGdkIWD0BHWcLdahwFQLoJ6Umopg9A
+vd1CiejSBkCTjw8wnSEQQPiVkXD08QhAq0KpbbNqEEBsk2Azxi4LQCyTGthZ
+shBAYCBYjj+gDUAnaxVkFgARQMwfdA9ySBBAg+uOIqBIEUBj/5rHgMsRQNFn
+q5SZmRFAL++xNeOlE0Dwt3AR
+                    "]]}}}, AspectRatio -> 1, Axes -> 
+                    False, Background -> GrayLevel[0.93], Frame -> True, 
+                    FrameStyle -> Directive[
+                    GrayLevel[0.7], 
+                    Thickness[Tiny]], FrameTicks -> None, 
+                    ImageSize -> {Automatic, 
+                    Dynamic[
+                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])]}, PlotRange -> {{0, 5}, {0, 5}}], 
+                   GridBox[{{
+                    RowBox[{
+                    TagBox["\"Domain: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"0.`", ",", "2.`"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0.`", ",", "1.`"}], "}"}]}], "}"}], 
+                    "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"Output: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"scalar\"", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"Order: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    RowBox[{"{", 
+                    RowBox[{"2", ",", "2"}], "}"}], "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"Method: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"Unstructured\"", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"Periodic: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["False", "SummaryItem"]}]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+                    AutoDelete -> False, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                    BaseStyle -> {
+                    ShowStringCharacters -> False, NumberMarks -> False, 
+                    PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+                 GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False,
+                  GridBoxItemSize -> {
+                  "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                 BaselinePosition -> {1, 1}]}, 
+              Dynamic[Typeset`open$$], ImageSize -> Automatic], 
+             BaselinePosition -> Baseline], DynamicModuleValues :> {}], 
+           StyleBox["]", "NonInterpretableSummary"]}]},
+        "CopyTag",
+        DisplayFunction->(#& ),
+        InterpretationFunction->(
+         "InterpolatingFunction[{{0., 2.}, {0., 1.}}, <>]"& )],
+       False,
+       Editable->False,
+       SelectWithContents->True,
+       Selectable->False], "[", 
+      RowBox[{"x", ",", "y"}], "]"}]}], ",", 
+    RowBox[{
+     RowBox[{"B", "[", 
+      RowBox[{"x", ",", "y"}], "]"}], "\[Rule]", 
+     RowBox[{
+      TagBox[
+       TemplateBox[{RowBox[{
+           StyleBox[
+            TagBox["InterpolatingFunction", "SummaryHead"], 
+            "NonInterpretableSummary"], 
+           StyleBox["[", "NonInterpretableSummary"], 
+           DynamicModuleBox[{Typeset`open$$ = False}, 
+            PanelBox[
+             PaneSelectorBox[{False -> GridBox[{{
+                   PaneBox[
+                    ButtonBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "SquarePlusIconMedium"]], 
+                    ButtonFunction :> (Typeset`open$$ = True), Appearance -> 
+                    None, Evaluator -> Automatic, Method -> "Preemptive"], 
+                    Alignment -> {Center, Center}, ImageSize -> 
+                    Dynamic[{
+                    Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification]}]], 
+                   GraphicsBox[{{
+                    GrayLevel[0.6], 
+                    AbsolutePointSize[5], 
+                    PointBox[{1, 1}], 
+                    PointBox[{2, 4}], 
+                    PointBox[{3, 2}], 
+                    PointBox[{4, 3}]}, {{}, {}, {
+                    AbsoluteThickness[1], 
+                    Opacity[1.], 
+                    LineBox[CompressedData["
+1:eJwBMQPO/CFib1JlAgAAADIAAAACAAAA4ScLwZmZ6T/ACPskWpOYv4AjHgZ5
+3Os/cnpQh5xu1j/qWn1XCVDuP5K7ih5ptuc/r+pongFN8D/CUK87BHLxP46d
+cUQ/bPE/ujUa8/qu9j9TbqBw1aPyP/TWyyAhFfw/neDJZqDG8z+QAqdF9GsA
+QM1wGePDAfU/VsVD/9nXAkCidscSKDf2P6Bp73exDQVA/B1wDMFX9z+TpM3k
+wfUGQDzjPoyykPg/7M3Z+O7ZCEABSgjW2LT5P3pl9LwNcgpAbCYw0z/T+j86
+ypori9cLQL0gflb/Cfw/lpOs9xIqDUCTvMaj8yv9Pw4alcoYNg5AT3Y1d0Bm
+/j+pB2LLtyIPQLClAv7Nmv8/NnA5bbjSD0BLO2UnSF0AQFrcILXmpw9AsTLc
+klX5AED+sDHBQukOQNp6UGP9igFAbZ+lR/sLDkD10dd20SgCQNHi3Mj38wxA
+42MO5MXDAkAZdr6AZb8LQJRGQrZUVANArv7zEMKHCkA4OInLD/EDQLBlMO3M
+IglAnnrNRWWDBEA3d8OX6skHQNf3wBnbEgVAD3D3ndNyBkADhMcwfa4FQHOK
+7Wak/wRA8WDLrLk/BkC/MhCgYawDQNJM4msi3QZAwss/TmVLAkCGc6iEq3cH
+QIsIg92+BgFA/OprAs8HCECrPCvgePD/P2VxQsMepAhAKXVLE0Xg/j+RSBbp
+CDYJQPRz0a7WJ/4/kFqZaBPFCUDN4sX5uLj9P4J7LytKYApAvh1MbRmT/T82
+7cJSG/EKQHzT1YZwwv0/3W1pvRiOC0B2LZ/10lT+P0c/DY2wIAxAVrX8MJA7
+/z+DS2C2aLAMQElWzbMzPQBAsmbGIk1MDUCi9bAadCABQKTSKfTL3Q1AYexd
+q+EpAkCJTaAId3sOQFyS/ndEhgNAQAPGdkIWD0BHWcLdahwFQLoJ6Umopg9A
+vd1CiejSBkCTjw8wnSEQQPiVkXD08QhAq0KpbbNqEEBsk2Azxi4LQCyTGthZ
+shBAYCBYjj+gDUAnaxVkFgARQMwfdA9ySBBAg+uOIqBIEUBj/5rHgMsRQNFn
+q5SZmRFAL++xNeOlE0Dwt3AR
+                    "]]}}}, AspectRatio -> 1, Axes -> 
+                    False, Background -> GrayLevel[0.93], Frame -> True, 
+                    FrameStyle -> Directive[
+                    GrayLevel[0.7], 
+                    Thickness[Tiny]], FrameTicks -> None, 
+                    ImageSize -> {Automatic, 
+                    Dynamic[
+                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])]}, PlotRange -> {{0, 5}, {0, 5}}], 
+                   GridBox[{{
+                    RowBox[{
+                    TagBox["\"Domain: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"0.`", ",", "2.`"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0.`", ",", "1.`"}], "}"}]}], "}"}], 
+                    "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"Output: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"scalar\"", "SummaryItem"]}]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+                    AutoDelete -> False, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                    BaseStyle -> {
+                    ShowStringCharacters -> False, NumberMarks -> False, 
+                    PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+                 GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False,
+                  GridBoxItemSize -> {
+                  "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                 BaselinePosition -> {1, 1}], True -> GridBox[{{
+                   PaneBox[
+                    ButtonBox[
+                    DynamicBox[
+                    FEPrivate`FrontEndResource[
+                    "FEBitmaps", "SquareMinusIconMedium"]], 
+                    ButtonFunction :> (Typeset`open$$ = False), Appearance -> 
+                    None, Evaluator -> Automatic, Method -> "Preemptive"], 
+                    Alignment -> {Center, Center}, ImageSize -> 
+                    Dynamic[{
+                    Automatic, 3.5 CurrentValue["FontCapHeight"]/
+                    AbsoluteCurrentValue[Magnification]}]], 
+                   GraphicsBox[{{
+                    GrayLevel[0.6], 
+                    AbsolutePointSize[5], 
+                    PointBox[{1, 1}], 
+                    PointBox[{2, 4}], 
+                    PointBox[{3, 2}], 
+                    PointBox[{4, 3}]}, {{}, {}, {
+                    AbsoluteThickness[1], 
+                    Opacity[1.], 
+                    LineBox[CompressedData["
+1:eJwBMQPO/CFib1JlAgAAADIAAAACAAAA4ScLwZmZ6T/ACPskWpOYv4AjHgZ5
+3Os/cnpQh5xu1j/qWn1XCVDuP5K7ih5ptuc/r+pongFN8D/CUK87BHLxP46d
+cUQ/bPE/ujUa8/qu9j9TbqBw1aPyP/TWyyAhFfw/neDJZqDG8z+QAqdF9GsA
+QM1wGePDAfU/VsVD/9nXAkCidscSKDf2P6Bp73exDQVA/B1wDMFX9z+TpM3k
+wfUGQDzjPoyykPg/7M3Z+O7ZCEABSgjW2LT5P3pl9LwNcgpAbCYw0z/T+j86
+ypori9cLQL0gflb/Cfw/lpOs9xIqDUCTvMaj8yv9Pw4alcoYNg5AT3Y1d0Bm
+/j+pB2LLtyIPQLClAv7Nmv8/NnA5bbjSD0BLO2UnSF0AQFrcILXmpw9AsTLc
+klX5AED+sDHBQukOQNp6UGP9igFAbZ+lR/sLDkD10dd20SgCQNHi3Mj38wxA
+42MO5MXDAkAZdr6AZb8LQJRGQrZUVANArv7zEMKHCkA4OInLD/EDQLBlMO3M
+IglAnnrNRWWDBEA3d8OX6skHQNf3wBnbEgVAD3D3ndNyBkADhMcwfa4FQHOK
+7Wak/wRA8WDLrLk/BkC/MhCgYawDQNJM4msi3QZAwss/TmVLAkCGc6iEq3cH
+QIsIg92+BgFA/OprAs8HCECrPCvgePD/P2VxQsMepAhAKXVLE0Xg/j+RSBbp
+CDYJQPRz0a7WJ/4/kFqZaBPFCUDN4sX5uLj9P4J7LytKYApAvh1MbRmT/T82
+7cJSG/EKQHzT1YZwwv0/3W1pvRiOC0B2LZ/10lT+P0c/DY2wIAxAVrX8MJA7
+/z+DS2C2aLAMQElWzbMzPQBAsmbGIk1MDUCi9bAadCABQKTSKfTL3Q1AYexd
+q+EpAkCJTaAId3sOQFyS/ndEhgNAQAPGdkIWD0BHWcLdahwFQLoJ6Umopg9A
+vd1CiejSBkCTjw8wnSEQQPiVkXD08QhAq0KpbbNqEEBsk2Azxi4LQCyTGthZ
+shBAYCBYjj+gDUAnaxVkFgARQMwfdA9ySBBAg+uOIqBIEUBj/5rHgMsRQNFn
+q5SZmRFAL++xNeOlE0Dwt3AR
+                    "]]}}}, AspectRatio -> 1, Axes -> 
+                    False, Background -> GrayLevel[0.93], Frame -> True, 
+                    FrameStyle -> Directive[
+                    GrayLevel[0.7], 
+                    Thickness[Tiny]], FrameTicks -> None, 
+                    ImageSize -> {Automatic, 
+                    Dynamic[
+                    3.5 (CurrentValue["FontCapHeight"]/AbsoluteCurrentValue[
+                    Magnification])]}, PlotRange -> {{0, 5}, {0, 5}}], 
+                   GridBox[{{
+                    RowBox[{
+                    TagBox["\"Domain: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    RowBox[{"{", 
+                    RowBox[{
+                    RowBox[{"{", 
+                    RowBox[{"0.`", ",", "2.`"}], "}"}], ",", 
+                    RowBox[{"{", 
+                    RowBox[{"0.`", ",", "1.`"}], "}"}]}], "}"}], 
+                    "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"Output: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"scalar\"", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"Order: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox[
+                    RowBox[{"{", 
+                    RowBox[{"2", ",", "2"}], "}"}], "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"Method: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["\"Unstructured\"", "SummaryItem"]}]}, {
+                    RowBox[{
+                    TagBox["\"Periodic: \"", "SummaryItemAnnotation"], 
+                    "\[InvisibleSpace]", 
+                    TagBox["False", "SummaryItem"]}]}}, 
+                    GridBoxAlignment -> {
+                    "Columns" -> {{Left}}, "Rows" -> {{Automatic}}}, 
+                    AutoDelete -> False, 
+                    GridBoxItemSize -> {
+                    "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                    GridBoxSpacings -> {
+                    "Columns" -> {{2}}, "Rows" -> {{Automatic}}}, 
+                    BaseStyle -> {
+                    ShowStringCharacters -> False, NumberMarks -> False, 
+                    PrintPrecision -> 3, ShowSyntaxStyles -> False}]}}, 
+                 GridBoxAlignment -> {"Rows" -> {{Top}}}, AutoDelete -> False,
+                  GridBoxItemSize -> {
+                  "Columns" -> {{Automatic}}, "Rows" -> {{Automatic}}}, 
+                 BaselinePosition -> {1, 1}]}, 
+              Dynamic[Typeset`open$$], ImageSize -> Automatic], 
+             BaselinePosition -> Baseline], DynamicModuleValues :> {}], 
+           StyleBox["]", "NonInterpretableSummary"]}]},
+        "CopyTag",
+        DisplayFunction->(#& ),
+        InterpretationFunction->(
+         "InterpolatingFunction[{{0., 2.}, {0., 1.}}, <>]"& )],
+       False,
+       Editable->False,
+       SelectWithContents->True,
+       Selectable->False], "[", 
+      RowBox[{"x", ",", "y"}], "]"}]}]}], "}"}], "}"}]], "Output",
+ CellChangeTimes->{{3.758370569630726*^9, 3.7583705810554533`*^9}, 
+   3.7583720311242743`*^9, 3.758372084462797*^9, 3.7583721157302027`*^9, 
+   3.758372158658551*^9, 3.7583722786936207`*^9, 3.7583723168306913`*^9, 
+   3.7583726237079*^9, 3.758373061486471*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"StreamPlot", "[", 
+  RowBox[{
+   RowBox[{"Evaluate", "[", 
+    RowBox[{
+     RowBox[{"{", 
+      RowBox[{
+       RowBox[{"A", "[", 
+        RowBox[{"x", ",", "y"}], "]"}], ",", 
+       RowBox[{"B", "[", 
+        RowBox[{"x", ",", "y"}], "]"}]}], "}"}], "/.", "s3"}], "]"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"x", ",", "0", ",", "2"}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{"y", ",", "0", ",", "1"}], "}"}], ",", 
+   RowBox[{"AspectRatio", "->", 
+    RowBox[{"1", "/", "2"}]}], ",", 
+   RowBox[{"StreamStyle", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"Arrowheads", "[", "0.02", "]"}], ",", 
+      RowBox[{"Thickness", "[", "0.005", "]"}]}], "}"}]}], ",", 
+   RowBox[{"Frame", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{"True", ",", " ", "True", ",", " ", "True", ",", " ", "True"}], 
+     "}"}]}], ",", 
+   RowBox[{"PlotRange", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "0.05"}], ",", "2.05"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"-", "0.05"}], ",", "1.05"}], "}"}]}], "}"}]}], ",", 
+   RowBox[{"FrameTicks", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+         "0", ",", "0.2", ",", " ", "0.4", ",", " ", "0.6", ",", " ", "0.8", 
+          ",", "1"}], "}"}], ",", "None"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{
+        RowBox[{"{", 
+         RowBox[{
+         "0", ",", "0.2", ",", " ", "0.4", ",", " ", "0.6", ",", " ", "0.8", 
+          ",", "1", ",", "1.2", ",", "1.4", ",", "1.6", ",", "1.8", ",", 
+          "2"}], "}"}], ",", "None"}], "}"}]}], "}"}]}], ",", 
+   RowBox[{"FrameLabel", "\[Rule]", 
+    RowBox[{"{", 
+     RowBox[{
+      RowBox[{"{", 
+       RowBox[{"\"\<y\>\"", ",", " ", "None"}], "}"}], ",", 
+      RowBox[{"{", 
+       RowBox[{"\"\<x\>\"", ",", " ", "None"}], "}"}]}], "}"}]}], ",", 
+   RowBox[{"FrameTicksStyle", "\[Rule]", 
+    RowBox[{"Directive", "[", 
+     RowBox[{"Black", ",", "36"}], "]"}]}], ",", 
+   RowBox[{"FrameStyle", "\[Rule]", 
+    RowBox[{"Thickness", "[", "0.005", "]"}]}], ",", 
+   RowBox[{"LabelStyle", "->", 
+    RowBox[{"Directive", "[", 
+     RowBox[{"Black", ",", "36"}], "]"}]}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.758370606059531*^9, 3.758370632081037*^9}, {
+  3.758370742974043*^9, 3.7583708084807568`*^9}, {3.7583708508492317`*^9, 
+  3.758370851912154*^9}, {3.75837089968981*^9, 3.758370968417438*^9}, {
+  3.758371030527255*^9, 3.75837104062151*^9}, {3.758371138395748*^9, 
+  3.758371171938231*^9}, {3.7583720420634747`*^9, 3.758372042349778*^9}, {
+  3.7583730541011953`*^9, 3.758373054235428*^9}}],
+
+Cell[BoxData[
+ GraphicsBox[{{}, {
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.992483114663941, 0.49999999453284466`}, {
+       0.9946448133119047, 0.4999999921292567}, {0.9961789117363606, 
+       0.49999998885246305`}, {0.9978689325387157, 0.49999997990923317`}, {
+       0.9993369831045406, 0.4999999353805054}, {0.9999954774208456, 
+       0.4999901118173778}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.8185961549468748`, 0.4996934494688455}, {
+       1.8179588978196886`, 0.4995908190227302}, {1.8168757496419412`, 
+       0.49945608850638606`}, {1.8150046817022252`, 0.49927569331664395`}, {
+       1.8117564394187509`, 0.49903240956001904`}, {1.8061024830355588`, 
+       0.49869866589556366`}, {1.7964387354112141`, 0.4982352498446143}, {
+       1.7799058850556522`, 0.4975777913402042}, {1.7500422168778287`, 
+       0.4965854543964119}, {1.7266541009823282`, 0.49586562205009427`}, {
+       1.6950994353561577`, 0.4949083683738135}, {1.6758302086155346`, 
+       0.49430276531723644`}, {1.6536604688851697`, 0.4935619204887674}, {
+       1.6532247832919575`, 0.49354669534068274`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.6490897086601544`, 0.49340219406593055`}, {
+       1.628590216165064, 0.49268583388840675`}, {1.600619450455217, 
+       0.4916745055161542}, {1.5817092483616093`, 0.49099974173399613`}, {
+       1.561552524217536, 0.49024181460586086`}, {1.5400780987322276`, 
+       0.4894085607626246}, {1.517499509777992, 0.4884764703116582}, {
+       1.4997145206152158`, 0.48756777929694545`}, {1.4837297734129467`, 
+       0.4866152974046128}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.4795997636177274`, 0.4863648889241383}, {
+       1.4618316183707654`, 0.4852500290354538}, {1.44289016724854, 
+       0.484091153904708}, {1.4242397603021213`, 0.48277324936021726`}, {
+       1.4055921086213368`, 0.48113880846893586`}, {1.3869455590468063`, 
+       0.4793777530389385}, {1.3682984584191487`, 0.477680004878299}, {
+       1.3436920579963547`, 0.47537830062663317`}, {1.3198223560058453`, 
+       0.47276634174477417`}, {1.3147346088288414`, 0.4721236459742434}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.310629632722712, 0.47160509607587897`}, {
+       1.2966893524476208`, 0.4698441282327225}, {1.2742930473216805`, 
+       0.4666116600904777}, {1.2528627699748898`, 0.462997104550249}, {
+       1.2326278497541134`, 0.45892862884424523`}, {1.2135882866593513`, 
+       0.4544062329724664}, {1.1957440806906035`, 0.4494299169349125}, {
+       1.1636685866497256`, 0.4377005208498681}, {1.1511060557837853`, 
+       0.43107111687950783`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.1474467279260412`, 0.4291400440019278}, {
+       1.1364282141500557`, 0.42332543707650067`}, {1.1191722783137443`, 
+       0.4107103026345061}, {1.1039690520418586`, 0.39598831320253886`}, {
+       1.0908185353343989`, 0.37915946878059903`}, {1.0797207281913654`, 
+       0.36022376936868683`}, {1.0702784503278984`, 0.3390751479236911}, {
+       1.0620945214591375`, 0.31560753740250097`}, {1.057117869576655, 
+       0.2970775468799848}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.0560446553276077`, 0.293081557139679}, {
+       1.0551689415850836`, 0.28982093780511653`}, {1.0495017107057358`, 
+       0.2617153491315376}, {1.0459552617386247`, 0.23966202829240973`}, {
+       1.0428297012126597`, 0.21714817983912882`}, {1.0401250291278406`, 
+       0.19417380377169494`}, {1.0378412454841675`, 0.170738900090108}, {
+       1.035916352716066, 0.14741182617629828`}, {1.034604109046549, 
+       0.12915415255290014`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.0343074903251779`, 0.1250271996620714}, {
+       1.0342883532579616`, 0.1247609394121962}, {1.032957247109854, 
+       0.10278623979780165`}, {1.0319230342717443`, 0.08148772733311455}, {
+       1.031136060231034, 0.06118955344282709}, {1.0305466704751263`, 
+       0.04221586955163093}, {1.0301548650040209`, 0.024566675659526263`}, {
+       1.0299606438177178`, 0.0082419717665132}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.1816915393139772, 0.49961083175338244`}, {
+       0.18251352095221265`, 0.4994829269208131}, {0.18400849229818728`, 
+       0.4993114499402788}, {0.1866850181722624, 0.49908007202618043`}, {
+       0.19112940326116842`, 0.49878138537936617`}, {0.19963422924895483`, 
+       0.4983619716805731}, {0.21396554810146265`, 0.4977740260508141}, {
+       0.23687205376431303`, 0.49696688219025875`}, {0.27057147092417705`, 
+       0.49589237662967856`}, {0.29442829734523424`, 0.49514752536265816`}, {
+       0.3243997504285744, 0.4942003365155882}, {0.34189196959128254`, 
+       0.493627385208376}, {0.34706301062214395`, 0.4934491055283183}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.35119815244838093`, 0.49330654008407304`}, {
+       0.3613398606649254, 0.49295688892383394`}, {0.382743423649503, 
+       0.49218884766196225`}, {0.4061026585450153, 0.4913232614227608}, {
+       0.42286420671688263`, 0.49070838649322884`}, {0.4405572325322925, 
+       0.49002878187618404`}, {0.45923081499967877`, 0.48929002712505376`}, {
+       0.47873771709374047`, 0.48847538357955617`}, {0.5023693037599535, 
+       0.48727331372171173`}, {0.5165586291669748, 0.4864982522840142}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.5206900690387032, 0.4862725812506924}, {0.5268010362077882,
+        0.4859387827885435}, {0.5514266688327698, 0.4844116968520679}, {
+       0.5764482835030569, 0.4827120872216129}, {0.5986669520465608, 
+       0.48117320924815915`}, {0.6206947436725789, 0.4794570716923175}, {
+       0.6425316583811109, 0.477563674554088}, {0.6641776961721569, 
+       0.47549301783347053`}, {0.6853668771646297, 0.4732058748078441}, {
+       0.6856539380178714, 0.47317020872028287`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.6897599656891725, 0.47266005228202385`}, {
+       0.7058332214774419, 0.4706630187545876}, {0.7255767291105935, 
+       0.4678644496737009}, {0.7445974000640844, 0.46481016756518406`}, {
+       0.7627744809081886, 0.4614449711110046}, {0.7799872182131802, 
+       0.45771365899313016`}, {0.7962356119790588, 0.45361623121156064`}, {
+       0.8115196622058248, 0.44915268776629597`}, {0.8336897018137932, 
+       0.4411494914918035}, {0.8497510664436125, 0.43358511083503687`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.8534942959813728, 0.43182217139857687`}, {
+       0.8536247297767463, 0.4317607413207814}, {0.8713247460946841, 
+       0.4209864372532296}, {0.8867897507676067, 0.40882657928914823`}, {
+       0.9003388185125257, 0.39494865697523085`}, {0.9122910240464532, 
+       0.37902015985817117`}, {0.9226463673693888, 0.36104108793796913`}, {
+       0.9314048484813326, 0.3410114412146248}, {0.9388786107029605, 
+       0.31899596194168683`}, {0.9440676758552228, 0.29989046233614436`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.945152162194983, 0.2958975170312521}, {0.9453797973549483, 
+       0.29505939237270395`}, {0.9509084084372957, 0.2692017325076761}, {
+       0.955464443950003, 0.24142298234660328`}, {0.958337334238403, 
+       0.2198190666205137}, {0.9608656764868303, 0.19801532985220072`}, {
+       0.963049470695285, 0.1760117720416644}, {0.964888716863767, 
+       0.15380839318890466`}, {0.9664290056007668, 0.13195415164358149`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.9666836650266296, 0.1278244001404794}, {0.9677366626224404,
+        0.11070380763489518`}, {0.9687961365980389, 0.09027800975319053}, {
+       0.9696126113044783, 0.07060320846835255}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.3036293402383, 0.522334391213938}, {0.3310616566341453, 
+       0.5261421610710478}, {0.3468613336665238, 0.5283913417930589}, {
+       0.36420716102505285`, 0.5309086122964866}, {0.3830591551697702, 
+       0.5337456880901843}, {0.4033773325607134, 0.5369542846830058}, {
+       0.4253009410372505, 0.5405625682246448}, {0.44882584333528525`, 
+       0.5446175443521227}, {0.46711559979921685`, 0.5479867972317246}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.4711847309561339, 0.5487363934275491}, {0.4736969782596589,
+        0.5491991878052854}, {0.49965928461521253`, 0.5543874733239783}, {
+       0.5265893719148051, 0.5602244095058648}, {0.5542585131048815, 
+       0.5667823778623537}, {0.5822536421406614, 0.57418691250391}, {
+       0.610161692977365, 0.5825635475409973}, {0.6279962214853997, 
+       0.5885949870464542}, {0.6313314778808888, 0.5898399168152405}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.63520784067428, 0.5912868218995498}, {0.6454880735365005, 
+       0.5951240585022718}, {0.6626372491306672, 0.6021507619084503}, {
+       0.6794437482679003, 0.6096750972649898}, {0.6957668808363823, 
+       0.6177432680853274}, {0.711465956724296, 0.6264014778828999}, {
+       0.7265409759316414, 0.6356497266577076}, {0.7409919384584183, 
+       0.6454880144097501}, {0.7677668717876414, 0.6670061662456923}, {
+       0.7761577108474612, 0.6754860227680364}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.7790679569686347, 0.6784271433611406}, {0.7915359350293398,
+        0.691027392790878}, {0.8138020632272759, 0.7163001566906855}, {
+       0.832987326040176, 0.7437732024644435}, {0.8412296088344362, 
+       0.7618612425186473}, {0.8485702396600494, 0.7804367992105665}, {
+       0.8551279192858268, 0.7990504835960651}, {0.8608630807888309, 
+       0.8178520919898549}, {0.8612635862773651, 0.8191349887849073}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.8624966072147988, 0.8230845941065613}, {0.8666606158751334,
+        0.8364227218422505}, {0.8717603800052591, 0.8547193186201489}, {
+       0.8761623731792083, 0.8727418823235504}, {0.8798665953969808, 
+       0.8904904129524542}, {0.885552607682343, 0.9242681062629257}, {
+       0.889189297579693, 0.9551551298277178}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.691263255564058, 0.5262155068936607}, {1.6762546447209812`,
+        0.5285759539145953}, {1.6596418610086283`, 0.531249110525136}, {
+       1.64136201657553, 0.5342945293225965}, {1.6211178192457665`, 
+       0.5377381913124188}, {1.5987995003029776`, 0.5416329347735425}, {
+       1.5746254570850349`, 0.5460785982135266}, {1.548814086929809, 
+       0.5511750201399301}, {1.5283884609881169`, 0.5554726501320848}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.5243395147437917`, 0.5563245639420169}, {
+       1.5212921675590039`, 0.5569657374705657}, {1.4922197723872568`, 
+       0.563539328395043}, {1.4621652422918403`, 0.5710631933286172}, {
+       1.4316969181500268`, 0.5797047326865441}, {1.4129816152232106`, 
+       0.5856758611105615}, {1.3944370399361725`, 0.5921726235033606}, {
+       1.3760631922889124`, 0.5991950198649414}, {1.3659326196802974`, 
+       0.6033957211338631}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.362110574890909, 0.6049805543922523}, {1.35786007228143, 
+       0.6067430501953038}, {1.3400252442011502`, 0.6148724898691532}, {
+       1.3227562723354966`, 0.6236391142611946}, {1.3060531566844702`, 
+       0.633042923371428}, {1.2899158972480695`, 0.6430839171998534}, {
+       1.274460222904013, 0.6537861294292189}, {1.2598018625300162`, 
+       0.6651735937422718}, {1.2459408161260805`, 0.6772463101390127}, {
+       1.2328770836922047`, 0.6900042786194411}, {1.2258978175342279`, 
+       0.6968245812120887}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.2229385870274145`, 0.6997164106739575}, {
+       1.2197801075706047`, 0.702802950883272}, {1.2075469327945139`, 
+       0.7162054676639859}, {1.1961876191360727`, 0.7302541773863617}, {
+       1.1856719872788595`, 0.7448220347760619}, {1.1763182359588573`, 
+       0.7637489500263475}, {1.1680196484890315`, 0.7831975323876372}, {
+       1.1606441053171839`, 0.8026492934254731}, {1.1542356462940468`, 
+       0.8222770626180075}, {1.1478027497200638`, 0.8414898689290747}, {
+       1.1469630170523455`, 0.8443070099011951}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.1457810741438603`, 0.8482722001601952}, {
+       1.1421761127855299`, 0.8603661495036915}, {1.1373557354904453`, 
+       0.8789059043418583}, {1.13334161783481, 0.8971091334435748}, {
+       1.1300255961835493`, 0.9147407148966172}, {1.1272995069015885`, 
+       0.9315655267887616}, {1.1251633499889278`, 0.947583569120008}, {
+       1.1236171254455671`, 0.9627948418903564}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.8087423412009596`, 0.5337995942218564}, {
+       1.7992678948815979`, 0.5491644177025097}, {1.7791825145521811`, 
+       0.5737629416666606}, {1.7712323922345632`, 0.5827125109875478}, {
+       1.7617867686775786`, 0.593000596023584}, {1.7613075228972777`, 
+       0.5935109992524998}, {1.7608245431083522`, 0.5940248937292878}, {
+       1.7600939670519238`, 0.5948014606698325}, {1.7596025093317433`, 
+       0.595323315355255}, {1.7591072492347337`, 0.5958487545980774}, {
+       1.7539405335206428`, 0.6013072047263649}, {1.748367857559455, 
+       0.6071597756196705}, {1.7423658964886317`, 0.6134403447417728}, {
+       1.7359117736408043`, 0.620185457659548}, {1.7247743665144646`, 
+       0.631988020180693}, {1.7124142047926396`, 0.645391259778703}, {
+       1.7004897970187607`, 0.6585631601612826}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.6977222827515053`, 0.661638928906333}, {
+       1.6840256175625352`, 0.6769997702053189}, {1.6683227115070993`, 
+       0.6953991606097603}, {1.6520480897618661`, 0.7157874672427383}, {
+       1.6352017523268358`, 0.7381646901042532}, {1.6177836992020078`, 
+       0.7625308291943047}, {1.6007225961479352`, 0.7882995070520705}, {
+       1.5977724491864935`, 0.7932710924855051}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.5956609612456638`, 0.7968293703702013}, {1.58494710892517, 
+       0.8148843462167281}, {1.570457237533713, 0.8422853466882779}, {
+       1.5572529819735628`, 0.8705025084667192}, {1.5479413372716149`, 
+       0.8931395521322707}, {1.5401987848920753`, 0.9150359371735937}, {
+       1.5340253248349445`, 0.9361916635906884}, {1.5312490207747484`, 
+       0.9485013744713141}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.5303387017711922`, 0.9525375907862249}, {
+       1.5294209571002222`, 0.9566067313835547}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.8124071799862136`, 0.44614514258876137`}, {
+       1.8042671008343487`, 0.4156329862783201}, {1.7969595619874983`, 
+       0.39325017032203696`}, {1.7869563703947597`, 0.3640691609826149}, {
+       1.7810125188690362`, 0.346475052120603}, {1.774531982257548, 
+       0.3262728315655588}, {1.7675147605602954`, 0.30346249931748237`}, {
+       1.762991412767747, 0.2882417048870403}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.7618127399240953`, 0.28427554135578936`}, {
+       1.7599608537772782`, 0.27804405537637367`}, {1.7533392782465391`, 
+       0.2554233176138929}, {1.7465191668383997`, 0.23074083067922105`}, {
+       1.7426537345685833`, 0.21421560638548584`}, {1.7388837144968652`, 
+       0.19703599495950264`}, {1.7353771959800162`, 0.17944911736432273`}, {
+       1.732078149232446, 0.16137259994559572`}, {1.7288351167272311`, 
+       0.14347327314363215`}, {1.725911584476005, 0.1254386877516482}, {
+       1.7255573212393807`, 0.1229667873507106}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.7249703341223495`, 0.11887103724194825`}, {
+       1.723307552478768, 0.10726884376964399`}, {1.7210230207355197`, 
+       0.08896374119761946}, {1.7191041084811962`, 0.07078348151845035}, {
+       1.717596934950732, 0.05298816621501231}, {1.7165015001441282`, 
+       0.03557779528730537}, {1.7158178040613836`, 0.01855236873532956}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.18415604191433776`, 0.4643865255546969}, {
+       0.1864838681207604, 0.4513048164494063}, {0.19030909020930895`, 
+       0.43330766806704174`}, {0.19881930459199668`, 0.4014987600151687}, {
+       0.20528566962777742`, 0.37960464378216185`}, {0.21344744852655984`, 
+       0.3523935430844816}, {0.21810027508511462`, 0.33652957682478013`}, {
+       0.22304926893049576`, 0.3188072709756925}, {0.22685797023254115`, 
+       0.30458905576806583`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.22792858209629194`, 0.300592368006158}, {
+       0.22829443006270317`, 0.2992266255372188}, {0.23383575848173693`, 
+       0.277787640509359}, {0.239494406432013, 0.2555404360444991}, {
+       0.24526910037586727`, 0.23133115785820496`}, {0.25162705366075794`, 
+       0.19820701696940193`}, {0.2545198160378597, 0.18091173115532877`}, {
+       0.25722176890473253`, 0.16312763509480785`}, {0.25988536966437403`, 
+       0.145502214904921}, {0.26082264373342307`, 0.1385406343497949}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.2613747290685022, 0.1344400338313613}, {0.262281456699324, 
+       0.12770533620985447`}, {0.2644100300095825, 0.10973699900960832`}, {
+       0.2662710895951495, 0.09159720330418253}, {0.26783529020684643`, 
+       0.07352930412142486}, {0.2690732865954947, 0.05577665648918305}, {
+       0.26998507876109434`, 0.0383392604074571}, {0.2705706667036453, 
+       0.021217115876247014`}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.18420716502280207`, 0.5436652395698841}, {
+       0.18640216370955773`, 0.558731990271478}, {0.19304835279605825`, 
+       0.5911040378357733}, {0.19830853640991064`, 0.6141366912622958}, {
+       0.20484680771457456`, 0.6433161341648764}, {0.2084718180669481, 
+       0.660505300490096}, {0.21216953397399907`, 0.6798199618251447}, {
+       0.2159399554357275, 0.7012601181700228}, {0.2166965068835148, 
+       0.7058992122135832}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.21736247577828682`, 0.7099828635527873}, {
+       0.21978308245213332`, 0.72482576952473}, {0.2234084590069434, 
+       0.747841025320663}, {0.22691363894224081`, 0.7728085482720851}, {
+       0.22887493899671651`, 0.7931692098053631}, {0.230586635919916, 
+       0.8144149058104427}, {0.23195645903744747`, 0.8361423461682618}, {
+       0.23301516524077492`, 0.8584859609185077}, {0.23381401021161882`, 
+       0.8745109042537662}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.23402001410051712`, 0.8786433714619538}, {
+       0.2341159625367754, 0.8805681106920468}, {0.2349898251039179, 
+       0.9027435049045984}, {0.2356367529422025, 0.9250121435561633}, {
+       0.23605674605162902`, 0.947374026646741}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.25375699616169717`, 0.4650712097108092}, {
+       0.27201242360512656`, 0.4593415509588385}, {0.2945794549893632, 
+       0.4522709558210685}, {0.3079200859349178, 0.4481074764025632}, {
+       0.3228669343964345, 0.4434583660416732}, {0.3394284801875863, 
+       0.4382109279595262}, {0.35761320312204653`, 0.43225246537724954`}, {
+       0.37776108632634714`, 0.42551462118190075`}, {0.39994691027673335`, 
+       0.4178935665277934}, {0.41111244250885143`, 0.4138319206600389}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.4150007680755734, 0.4124174783260558}, {
+       0.42378135081144735`, 0.40922339703693894`}, {0.4488750837687317, 
+       0.3993382083313488}, {0.47733923375933796`, 0.38696035855776056`}, {
+       0.5069364789242341, 0.3728219215039792}, {0.5220204084631384, 
+       0.3650550958370143}, {0.5371084043278098, 0.3567733495299974}, {
+       0.5522004665182487, 0.3479766825829286}, {0.5638640451381248, 
+       0.3407823589666682}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.5673839466340936, 0.3386075836050437}, {0.5822364915168873,
+        0.3288288214973191}, {0.5968598576060044, 0.3184580968161461}, {
+       0.6111666933018061, 0.3075529209522889}, {0.6251569986042926, 
+       0.2961132939057476}, {0.639246697371811, 0.284642320417557}, {
+       0.6528210788159506, 0.2726995886299806}, {0.6659344476740492, 
+       0.26025240919333514`}, {0.6784238897340943, 0.24739885015667085`}, {
+       0.692805879469382, 0.23144203105954536`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.6954277431304792, 0.22824139347178088`}, {
+       0.706371638048446, 0.21483188464378744`}, {0.7157735347517586, 
+       0.19928030182800233`}, {0.7243357807925205, 0.18356886745533552`}, {
+       0.73209028575887, 0.16798978796147995`}, {0.7390264131214281, 
+       0.1524456612012047}, {0.7521955242692868, 0.12191774362445221`}, {
+       0.7623215930550479, 0.09258040340245638}, {0.7657676186667527, 
+       0.07960731368785402}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.76682984781608, 0.07560838982469947}, {0.7696701054900588, 
+       0.06491580602846751}, {0.7745065475856676, 0.03940611699573596}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.7788204218220949`, 0.4510053293861994}, {
+       1.7663854104231524`, 0.4422584757496303}, {1.7500783738916292`, 
+       0.43142245104484905`}, {1.7288341319540113`, 0.41756162178409495`}, {
+       1.7015875043367845`, 0.399740354479607}, {1.6813143703689541`, 
+       0.3861784602249297}, {1.658250185611056, 0.37020891914518916`}, {
+       1.645719886454501, 0.36122215472519775`}, {1.6417636468441477`, 
+       0.35827349255775254`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.6384461294066253`, 0.35580088242254687`}, {
+       1.6325886991377665`, 0.35143522595749555`}, {1.618856623660854, 
+       0.3408481328420829}, {1.6045236600237625`, 0.32946087537895935`}, {
+       1.5897857362479824`, 0.31722765068137915`}, {1.5748387803550026`, 
+       0.30410265586259594`}, {1.5596827923448235`, 0.2900858909226099}, {
+       1.5443177722174453`, 0.275177355861421}, {1.5298452278128551`, 
+       0.26123743288009504`}, {1.5155465291720418`, 0.24662021311103324`}, {
+       1.5149252937131439`, 0.24595113115546066`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.512109993814367, 0.24291900165477415`}, {
+       1.5012825473295894`, 0.23125764368795174`}, {1.487470669181744, 
+       0.2153538832097017}, {1.4742792693009088`, 0.19609113871434114`}, {
+       1.4620863893160727`, 0.17645003650696817`}, {1.4512227271520113`, 
+       0.1570325832183}, {1.4415780501671331`, 0.13763810997143094`}, {
+       1.4336303739742027`, 0.12192221443235662`}, {1.4265695388996447`, 
+       0.1065347428506436}, {1.4251997909447736`, 0.10319377753189696`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.423630226225961, 0.09936543723583571}, {
+       1.4203955449434602`, 0.09147569522629194}, {1.415108392105648, 
+       0.07674507155930163}, {1.4070975261173766`, 0.04878724292752071}, {
+       1.4024398572670655`, 0.023179403785416535`}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.23673819692687503`, 0.5720536848858423}, {
+       0.2555074200113011, 0.587277051674972}, {0.280135251177929, 
+       0.6069783999892716}, {0.29648439053324904`, 0.6201664223504744}, {
+       0.3150473963785468, 0.6354595216560799}, {0.33575738057281446`, 
+       0.6531870917533897}, {0.35854745497504403`, 0.6736785264897053}, {
+       0.36352692986016366`, 0.6783581358091907}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.36654203022694126`, 0.6811916658703062}, {
+       0.3706015066182415, 0.6850066792986755}, {0.3829335420416232, 
+       0.697117770669768}, {0.3955435612451893, 0.7100118006029827}, {
+       0.4084315642289396, 0.7236887690983196}, {0.4219363852805042, 
+       0.7378868596856365}, {0.4354304275571696, 0.7528460561353597}, {
+       0.44905853221874653`, 0.7686315137099397}, {0.4623861757858027, 
+       0.7850477666220236}, {0.4734487327093087, 0.8016842423680723}, {
+       0.47560086843273724`, 0.8051754104638214}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.47777209809330784`, 0.8086975525095155}, {
+       0.4839193416436816, 0.8186695353757607}, {0.4935006680397761, 
+       0.8356094195588954}, {0.502291823413974, 0.8526353036128745}, {
+       0.510958991469631, 0.8693760514691833}, {0.5186983689968339, 
+       0.885836543701599}, {0.5255099559955824, 0.9020167803101218}, {
+       0.5313937524658768, 0.9179167612947517}, {0.5403471403564901, 
+       0.9481775187859491}, {0.5425606831058528, 0.9600314534531972}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.5433201885132423, 0.9640987467011858}, {0.5455276992040604,
+        0.9759203785688081}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.7170524739086102`, 0.46474068998542345`}, {
+       1.7029246784978629`, 0.46120295731549904`}, {1.6865667957149557`, 
+       0.45720542746543835`}, {1.6679392818258965`, 0.45259484702167796`}, {
+       1.6470025930966907`, 0.447217962570654}, {1.6231418685133885`, 
+       0.4410207422019293}, {1.5962025008860048`, 0.43386977680256544`}, {
+       1.5668353272164957`, 0.4254927471552471}, {1.5570822156073525`, 
+       0.4224001590184886}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.5531381458717595`, 0.42114954446964975`}, {
+       1.5356911845068169`, 0.41561733404265894`}, {1.5203716111640104`, 
+       0.41029368451295567`}, {1.5047561528243225`, 0.4045422094753115}, {
+       1.4888448094877529`, 0.3983629089297265}, {1.4726375811543024`, 
+       0.3917557828762006}, {1.456294598641332, 0.38467377814414083`}, {
+       1.4399759927662035`, 0.3770698415629541}, {1.4236817635289163`, 
+       0.3689439731326405}, {1.4074119109294716`, 0.3602961728532}, {
+       1.4010570200893637`, 0.35665862812015386`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.397466083314104, 0.35460317296251254`}, {1.391341421968036,
+        0.35109741178083}, {1.3756452836447766`, 0.3413186609717279}, {
+       1.3603234959596944`, 0.33095992042589406`}, {1.345376058912788, 
+       0.320021190143328}, {1.3303248160667853`, 0.3090636157255972}, {
+       1.3158555354571526`, 0.29756373984146406`}, {1.3019155837863923`, 
+       0.28550057292572506`}, {1.2886628609469974`, 0.272937083673991}, {
+       1.2732474766950899`, 0.2570481959768069}, {1.268658447142058, 
+       0.25175918611240855`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.2659468460876295`, 0.248633975311421}, {
+       1.2589394946109058`, 0.24055776864170955`}, {1.2484026810312856`, 
+       0.22346456111896112`}, {1.238869345431519, 0.20601649098791142`}, {
+       1.2302849914450262`, 0.1886012850886354}, {1.222667784527334, 
+       0.17108970114110816`}, {1.2152565899726806`, 0.15436188190924738`}, {
+       1.208660562398785, 0.13788935111171444`}, {1.2028797018056474`, 
+       0.12167210874850948`}, {1.1979140081932675`, 0.1057101548196324}, {
+       1.1963338937698653`, 0.0995464285745013}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.1953064165002638`, 0.09553843490067403}, {
+       1.1900973677089446`, 0.07521892495145625}, {1.1848798867439798`, 
+       0.04708247419378028}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.815692730001947, 0.5670475551947184}, {1.8137454867195564`,
+        0.5905604637100716}, {1.8122385891460802`, 0.6100818781520183}, {
+       1.810927979033919, 0.6336760060025276}, {1.8105201599497547`, 
+       0.6616557875590918}, {1.8117216354602708`, 0.6943341631192036}, {
+       1.813113410899987, 0.71235364306076}, {1.815282614411279, 
+       0.7313844103235434}, {1.8153975563747653`, 0.7321662091475225}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.8159994062938227`, 0.7362598016411542}, {
+       1.8182292459941478`, 0.7514264649075542}, {1.821953305648593, 
+       0.772479806812792}, {1.826297190563075, 0.7952502676318303}, {
+       1.8315784401330188`, 0.8188287909825092}, {1.8361831760550245`, 
+       0.8354954459386613}, {1.8414067487518455`, 0.852609613420591}, {
+       1.8468778561585926`, 0.8699027859128319}, {1.8522251962103766`, 
+       0.8871064558999172}, {1.8549041612741628`, 0.8968571532762106}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.8560003301955832`, 0.9008469072190872}, {
+       1.8577392466845173`, 0.9071760858543174}, {1.8629692021916493`, 
+       0.9275295457767803}, {1.8660251535533083`, 0.9453441397025326}, {
+       1.8681348480553461`, 0.963809835773626}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.22646716020544488`, 0.42922175145418223`}, {
+       0.23963818328976064`, 0.4168836114713178}, {0.2564567893731692, 
+       0.40168801377730606`}, {0.2663814760616225, 0.39276981421602797`}, {
+       0.27751313854402737`, 0.38263954208177897`}, {0.289851776820384, 
+       0.3712971973745591}, {0.3033973908906922, 0.35874278009436833`}, {
+       0.3203376547883855, 0.3426262795451129}, {0.33885628892600983`, 
+       0.3243218680801005}, {0.3469955364055416, 0.3158512911418429}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.3498623284172327, 0.31286779882734106`}, {
+       0.358683592070461, 0.30368744245468726`}, {0.37954986298863486`, 
+       0.28058089942422926`}, {0.3902293922256421, 0.2681275503789375}, {
+       0.40088222513162863`, 0.2551101049760425}, {0.41150836170659455`, 
+       0.24152856321554436`}, {0.42210780195053965`, 0.22738292509744296`}, {
+       0.4331532221843958, 0.2127444743837543}, {0.44390138943207735`, 
+       0.19768064770007618`}, {0.4532399940005233, 0.18389802887739876`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.45551198766093787`, 0.180440574719503}, {
+       0.46450596496891605`, 0.16627686642275133`}, {0.47255861661690857`, 
+       0.15042886407168363`}, {0.4799228532604047, 0.13457562956070304`}, {
+       0.4922153603948974, 0.1036942021024408}, {0.5028128243757833, 
+       0.07383637905015446}, {0.5101163524143856, 0.04578421436879283}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.7706342542889497`, 0.5397936926765187}, {
+       1.7409351814976874`, 0.5539194476959612}, {1.719868485480571, 
+       0.5636014430951649}, {1.6934153211898433`, 0.5757631487236922}, {
+       1.6780361401988175`, 0.583014752814621}, {1.6610449956532731`, 
+       0.5913680043442185}, {1.6424418875532107`, 0.6008229033124848}, {
+       1.62222681589863, 0.6113794497194196}, {1.6216056404635395`, 
+       0.6117166193033866}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.6179691996384111`, 0.6136904533780564}, {
+       1.6074096218532037`, 0.6194221166853602}, {1.5919573941805165`, 
+       0.6282270718331475}, {1.5758701328805693`, 0.6377943151627816}, {
+       1.559147837953362, 0.6481238466742625}, {1.542026053002183, 
+       0.6592830784949438}, {1.5247403216303201`, 0.6713394227521792}, {
+       1.5072906438377744`, 0.6842928794459688}, {1.4896770196245452`, 
+       0.6981434485763124}, {1.480744397382561, 0.7056693283074839}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.4775801427187116`, 0.7083352644003592}, {1.472238038172419,
+        0.7128360744914632}, {1.4553122886631815`, 0.7283157015396742}, {
+       1.4388997710968332`, 0.7445823297209454}, {1.4230004854733733`, 
+       0.7616359590352767}, {1.4055906183658935`, 0.7801574006773955}, {
+       1.389296000910305, 0.7992284245683958}, {1.3739817811103943`, 
+       0.819041253968483}, {1.366195872875471, 0.8302081454237803}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.3638294263419586`, 0.8336022069484162}, {
+       1.3600525149548022`, 0.8390192190970406}, {1.351165960821877, 
+       0.8568330884375575}, {1.3434330682520643`, 0.8744439055512515}, {
+       1.3367855784504963`, 0.8914718882587319}, {1.3312462443487956`, 
+       0.9080436306197955}, {1.3210935939163413`, 0.940194726944436}, {
+       1.3150092904255166`, 0.9694485657812691}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.3462094719826434`, 0.5040440022693723}, {
+       1.3140183230623776`, 0.5046355038878322}, {1.2827750352501406`, 
+       0.5053029342489841}, {1.2531176424766222`, 0.5060519940411577}, {
+       1.2256841786725126`, 0.5068883839526829}, {1.2004746438378113`, 
+       0.5078121039835595}, {1.180776256343242, 0.5086785617899081}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.1766430878639553`, 0.5088691901951014}, {
+       1.1566439161401487`, 0.5099575322691594}, {1.1378558334042146`, 
+       0.5112512362554675}, {1.1064507852216536`, 0.5143166217808923}, {
+       1.0755035305928213`, 0.5206947199376596}, {1.05313183710885, 
+       0.5310908368443753}, {1.0373798587737586`, 0.5465809227556018}, {
+       1.0297567348478636`, 0.5614722717616069}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.0278713170683067`, 0.5651553306296564}, {
+       1.0262917495915658`, 0.5682409279259014}, {1.0222017119554445`, 
+       0.5821498267524323}, {1.0186877736528235`, 0.5991315584321885}, {
+       1.0157499346837038`, 0.6191861229651703}, {1.0133881950480843`, 
+       0.6423135203513775}, {1.0109853286473545`, 0.6708924547216878}, {
+       1.009105788665764, 0.7038952217004611}, {1.0084809980161347`, 
+       0.7244645559275212}, {1.008371164723297, 0.728830332136376}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.008267104798763, 0.7329666220634838}, {1.0079373196770178`,
+        0.7460752888561385}, {1.0074593148758657`, 0.7680895626464086}, {
+       1.0070521298701947`, 0.7907199965782999}, {1.006666719593514, 
+       0.8113217679195781}, {1.0063299606310632`, 0.8317968703513048}, {
+       1.0060418529828434`, 0.8521453038734809}, {1.0058023966488536`, 
+       0.8723670684861059}, {1.0056036872746674`, 0.8921187423450566}, {
+       1.0055482666827307`, 0.898446496329886}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.0055120295954307`, 0.9025839363237097}, {
+       1.0054378205058574`, 0.9110569036062097}, {1.005304796342424, 
+       0.9291815522695652}, {1.005204614784367, 0.946492688335123}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.23686074614112126`, 0.5362407630456667}, {
+       0.2662562317919576, 0.5477477276193304}, {0.28600058968684305`, 
+       0.5552832734447215}, {0.3099737549165432, 0.5644981406889219}, {
+       0.3238863395815524, 0.5698995300720539}, {0.33926436523978953`, 
+       0.5759178020846621}, {0.35605787314289966`, 0.582662650071148}, {
+       0.37421690454252793`, 0.5902437673759129}, {0.39065303206685126`, 
+       0.5973495814164609}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.39444782708837456`, 0.5989984730858219}, {
+       0.41535666126057746`, 0.6084089962793824}, {0.4379484195752081, 
+       0.6191951780164217}, {0.4613590069844404, 0.6312356225887835}, {
+       0.4762302423284038, 0.639455426130206}, {0.49125560361882187`, 
+       0.6482547458215607}, {0.5064350908556947, 0.6576335816628478}, {
+       0.5217687040390224, 0.6675919336540672}, {0.5370696507639071, 
+       0.6781384022171403}, {0.5387591780767592, 0.6793867350423438}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.5420869581717261, 0.6818455157297028}, {0.552151138625451, 
+       0.6892815877739883}, {0.567013167623654, 0.7010214903246113}, {
+       0.5816557377585161, 0.713358109869009}, {0.5959017249580709, 
+       0.7262308009060255}, {0.6095740051503518, 0.7395789179345044}, {
+       0.6226725783353589, 0.7534024609544456}, {0.6351974445130921, 
+       0.7677014299658492}, {0.6478122696571802, 0.782096937054185}, {
+       0.6596734698612846, 0.7967747939801187}, {0.6599900394785977, 
+       0.797202213750682}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.662452663236192, 0.8005271509015947}, {0.6708164046967647, 
+       0.8118195436664776}, {0.6811349954495411, 0.8269775573447787}, {
+       0.6891586079151582, 0.8425677221350762}, {0.6963233177699715, 
+       0.8580740632424564}, {0.7082087212636431, 0.8881118329756773}, {
+       0.7185749406079361, 0.9171992033155039}, {0.7259027916534724, 
+       0.9443857748685424}, {0.7271887522144728, 0.9514288828414744}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.7279319265032003, 0.955499191773922}, {0.7304703680974999, 
+       0.9694020428984743}, {0.7325557636372672, 0.991978502668982}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.8145333962962344`, 0.36325614111608867`}, {
+       1.8155377175788783`, 0.3408980408222529}, {1.8178492285375278`, 
+       0.3157564712320968}, {1.8219600399335412`, 0.2878691046813984}, {
+       1.8256225406642386`, 0.2690583470420992}, {1.8303125558835869`, 
+       0.24940235384085174`}, {1.8361118545962127`, 0.22909388311023526`}, {
+       1.8431022058067432`, 0.208325692882829}, {1.8457449516868945`, 
+       0.20154031018510174`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.8472465759742567`, 0.1976848144545126}, {
+       1.8512823362537947`, 0.1873227973651568}, {1.8606509726759846`, 
+       0.16631021076374247`}, {1.8704492336451422`, 0.14564007416263164`}, {
+       1.8811176827693907`, 0.12512589419530848`}, {1.8946183427934749`, 
+       0.10048318650146379`}, {1.9079523976714279`, 0.07579789573894277}, {
+       1.9143172924081444`, 0.06327991701711295}, {1.920594521299732, 
+       0.05086752386635613}, {1.9210741694927973`, 0.04968907139404261}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.9226339837541058`, 0.04585674803879107}, {
+       1.9312505876619965`, 0.024686527187326696`}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.7788678058867742`, 0.6450854767347539}, {
+       1.7710064687490465`, 0.6657046639897113}, {1.76210794527563, 
+       0.6894792542869745}, {1.7523783818613379`, 0.7166566823454745}, {
+       1.742023924900984, 0.7474843828841424}, {1.7367326316607488`, 
+       0.7642072204660213}, {1.7315256556734284`, 0.7817228964329056}, {
+       1.726402996939023, 0.8000314107847959}, {1.7259337042686547`, 
+       0.8018105924592572}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.7248784273936364`, 0.8058113565795271}, {
+       1.7213646554575324`, 0.8191327635216918}, {1.7131368902322135`, 
+       0.8512418945336393}, {1.7056846172321924`, 0.8846803642170059}, {
+       1.7023042424631165`, 0.9107581848249704}, {1.6999523548668551`, 
+       0.9364345823223403}, {1.6986677391598324`, 0.9606989441068465}, {
+       1.6985888646626157`, 0.9686418802862932}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.6985477797389876`, 0.9727792749807884}, {
+       1.6984374671032398`, 0.983888141045912}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.766627476915298, 0.3981179650451291}, {1.7516039175790166`,
+        0.37929239930126385`}, {1.7428208325058825`, 0.368324981016724}, {
+       1.7330861593480837`, 0.3559881325315084}, {1.7223998981056197`, 
+       0.3422818538456167}, {1.7107620487784907`, 0.327206144959049}, {
+       1.6962043263376723`, 0.3078053578937152}, {1.6805572787292389`, 
+       0.286066306366734}, {1.6669450534105295`, 0.26607241642705}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.6646165245340687`, 0.2626522298677413}, {
+       1.6641653200372029`, 0.26198949230357327`}, {1.6473728643455776`, 
+       0.23557541762970088`}, {1.630757893092242, 0.20717248910493838`}, {
+       1.6148983877150753`, 0.1771291134891073}, {1.6068128849263328`, 
+       0.1615226070243419}, {1.5991553991500904`, 0.14574476840952968`}, {
+       1.5918438510946016`, 0.12968494606029418`}, {1.586517324983229, 
+       0.11699374734117511`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.5849694412969313`, 0.11315939041526615`}, {
+       1.5799363652105503`, 0.09641775202326137}, {1.5756286758730893`, 
+       0.07951332010616045}, {1.569786821970107, 0.047634103256896015`}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.5499848732943958, 0.5166615816095982}, {0.5808304552026904,
+        0.5188315656738306}, {0.6118571469619821, 0.5213322575535194}, {
+       0.6430649485722708, 0.5241636572486645}, {0.6628991940410526, 
+       0.5261894731826267}, {0.6822285706826267, 0.5284204039804349}, {
+       0.701053078496993, 0.5308564496420893}, {0.7146546919185145, 
+       0.5328174077416034}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.7187499489648244, 0.5334078250123844}, {0.7193727174841518,
+        0.5334976101675899}, {0.7370562537558255, 0.5363860406715436}, {
+       0.7539724534237362, 0.5395638962685572}, {0.7855028429482707, 
+       0.5467878827417644}, {0.813858845088182, 0.5553941340164333}, {
+       0.8389354188738979, 0.5656072145217863}, {0.8623722784825161, 
+       0.5766237096424812}, {0.8748669449391195, 0.5845386567324302}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.8783622575170473, 0.5867528186080768}, {0.8826019151204167,
+        0.5894384977918085}, {0.8956895738240676, 0.6039561254170962}, {
+       0.9071760232658972, 0.6205599772024945}, {0.9179337011976844, 
+       0.6382367238228428}, {0.9272338361093865, 0.6580592601130913}, {
+       0.9352248692403391, 0.6800214288410196}, {0.9420552418298781, 
+       0.7041170727744065}, {0.9478437699155925, 0.7301114058665022}, {
+       0.9483832649488158, 0.733178199048453}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.9491001232954392, 0.7372532250532613}, {0.9527092695350716,
+        0.7577696420705567}, {0.9568181931135286, 0.786473128853991}, {
+       0.9602846801513247, 0.8152647917957416}, {0.9631087306484599, 
+       0.8441446308958083}, {0.965290344604934, 0.8731126461541912}, {
+       0.9669657369043988, 0.9012411197883642}, {0.966987046168474, 
+       0.901671443293627}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.9671916858831399, 0.9058039782803112}, {0.9682711224305061,
+        0.9276023340158015}, {0.9692065011832555, 0.9521962888365029}, {
+       0.9697718731626471, 0.9750229842504685}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.22759195386128547`, 0.6135236300560575}, {
+       0.24196805166491403`, 0.6365573275644387}, {0.2598040581461586, 
+       0.6652152409146684}, {0.2719141449772379, 0.6850492842950583}, {
+       0.2851991695800761, 0.7074853040448394}, {0.2993663878342476, 
+       0.7325991613969864}, {0.3117440229818057, 0.7559739806967447}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.3136802882561672, 0.7596305637487605}, {
+       0.31412305561932724`, 0.7604667175844744}, {0.3215810307351123, 
+       0.7753490110500029}, {0.3289035635319337, 0.7907514858414302}, {
+       0.33609065400979166`, 0.8066741419587563}, {0.343142302168686, 
+       0.8231169794019811}, {0.35063931418258554`, 0.840427125894212}, {
+       0.35772580600758686`, 0.8579952386074059}, {0.3645053647830838, 
+       0.8759685028743835}, {0.37066722909089456`, 0.8939053626966823}, {
+       0.3749032024084479, 0.9129536803840808}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.375801382543106, 0.9169926153024339}, {0.3776530094024609, 
+       0.9253190078482404}, {0.3819791110510974, 0.9549361504980861}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.17990997183893598`, 0.6819174603375417}, {
+       0.17495181587547115`, 0.7102823173989817}, {0.1673121286249167, 
+       0.7408353145491675}, {0.1564078602240501, 0.7729619414126968}, {
+       0.14968429151037926`, 0.7893602934399508}, {0.14205014434538937`, 
+       0.8056419078015116}, {0.1335054187290805, 0.8218067844973796}, {
+       0.12472418869530168`, 0.8367108425192158}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.12256989935352026`, 0.8402431057398583}, {
+       0.11196202580636422`, 0.8573578692340104}, {0.09872705763843719, 
+       0.8762487483468242}, {0.08831004368205142, 0.8881628794291456}, {
+       0.0774081915507561, 0.8994886547063332}, {0.05378475742964102, 
+       0.9199180896477207}, {0.024438480826092936`, 0.9335297876027921}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.44294797887181087`, 0.45737102983930783`}, {
+       0.46825616452982505`, 0.45285146147397765`}, {0.4949442694984699, 
+       0.4477561640020973}, {0.5228417469324462, 0.44201736199098496`}, {
+       0.5514811275541226, 0.4354983215747523}, {0.5803949420858681, 
+       0.4280623088875111}, {0.6042691850055643, 0.4209296776782429}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.6082336379299826, 0.4197452639671362}, {0.6125978692664973,
+        0.41844141308734095`}, {0.6442625006346714, 0.40742464434671477`}, {
+       0.6748908743108057, 0.3948545528091137}, {0.7039850284153153, 
+       0.3805736886180187}, {0.7312219242743978, 0.36446445038496444`}, {
+       0.7557730261498369, 0.3467734863758841}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.7590310183279039, 0.34422388885949606`}, {
+       0.7802449736944886, 0.32738103534279384`}, {0.8017594854452994, 
+       0.30642237511314696`}, {0.8191670974356622, 0.2804990950667539}, {
+       0.8341239572324273, 0.2528487807347898}, {0.8479516891541681, 
+       0.2247297284973623}, {0.8532727066389489, 0.21136609029128617`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.8548033103057674, 0.2075220071438882}, {0.8595211653258605,
+        0.1956732004490082}, {0.8690320897064341, 0.16628225826034407`}, {
+       0.8766841662548183, 0.1371599636019865}, {0.8826705906798515, 
+       0.10885648550245655`}, {0.8871845586903724, 0.08192199299027521}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.2884866208969561, 0.41938285932582947`}, {
+       0.31014394154554736`, 0.4073664425543869}, {0.33551739142373393`, 
+       0.3929018572406314}, {0.3497228512500269, 0.3845339464583613}, {
+       0.3650075670950404, 0.37529292763408295`}, {0.3812435438606993, 
+       0.3651166327598463}, {0.3983027864489286, 0.3539428938277015}, {
+       0.4162250498299904, 0.3415803515930198}, {0.42903231543895537`, 
+       0.33223444687978676`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.43237462246326, 0.3297954498350425}, {0.4349158889194772, 
+       0.3279409998005155}, {0.4540460085373089, 0.31311769992625293`}, {
+       0.47328611350340566`, 0.2972033134462967}, {0.4975260172722651, 
+       0.2752923984526998}, {0.5211775060031336, 0.25157824478905544`}, {
+       0.5436988627234844, 0.22636427213312565`}, {0.5518858138495921, 
+       0.21599374313701228`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.5544495937037364, 0.21274616624208406`}, {
+       0.5645483704607908, 0.19995390016267248`}, {0.583346016476698, 
+       0.17283941973857334`}, {0.5997117880328517, 0.14551312172170566`}, {
+       0.6148616223591287, 0.11808091490845372`}, {0.6272654183220948, 
+       0.09126142565014105}, {0.6338721186717239, 0.06873632278123465}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.6348492362696727, 0.06471888244255747}, {
+       0.6390609700632546, 0.04467782244787592}, {0.6426960323196074, 
+       0.023162412826066504`}, {0.6441606327157388, 
+       0.0035381489179491382`}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.1598530902143409, 0.5690521898016473}, {
+       0.14240945934928373`, 0.588485076708501}, {0.1287647602788204, 
+       0.5986975665914798}, {0.11063844360540434`, 0.6086585595969117}, {
+       0.09710696131993118, 0.6151928856013886}, {0.08127729092440576, 
+       0.6212907273576261}, {0.06810781970534677, 0.6243262304207468}, {
+       0.0535554783361763, 0.626767576345384}, {0.021730306425244268`, 
+       0.6302304973862359}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.527691948947823, 0.5199416671511394}, {1.498343039513578, 
+       0.5223247791821032}, {1.4679225125907536`, 0.5250962193525838}, {
+       1.4370857213572736`, 0.5283736027880559}, {1.405832665813139, 
+       0.5321569294885197}, {1.3741633459583493`, 0.5364461994539751}, {
+       1.3632259342007427`, 0.538100299856992}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.3591348555779215`, 0.5387190070016761}, {1.354829695184092,
+        0.5393700904298495}, {1.3358933435440408`, 0.542575419655595}, {
+       1.3173542910381966`, 0.5460621871312118}, {1.2992125376665584`, 
+       0.5498303928566998}, {1.2816120178850774`, 0.5539306264526936}, {
+       1.2646966661497032`, 0.5584134775398277}, {1.2329214668172757`, 
+       0.568527032187517}, {1.2040815710994184`, 0.5804262153659233}, {
+       1.2001820385439346`, 0.5825405464067992}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.1965446957501127`, 0.5845127178570589}, {
+       1.1783716104262736`, 0.5943661856412025}, {1.1542266172754851`, 
+       0.6093265494649179}, {1.1332542905473444`, 0.6265141099852373}, {
+       1.120960884209401, 0.6430170694999015}, {1.1100349540321652`, 
+       0.6612195218810124}, {1.0997446808106044`, 0.6802182790361206}, {
+       1.0907257215003938`, 0.7008096457392231}, {1.089578899517569, 
+       0.7040285162627681}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.0881902545374829`, 0.7079261293718734}, {
+       1.0828719337091424`, 0.7228534558492877}, {1.0760771750444584`, 
+       0.7462095432252822}, {1.0702484533910321`, 0.7705922771809524}, {
+       1.0652927766335532`, 0.7957160270300441}, {1.0612190618783108`, 
+       0.8202039388798119}, {1.0577398398405369`, 0.844351186509787}, {
+       1.0548551105202317`, 0.8681577699199695}, {1.0547138955835038`, 
+       0.8696046677163062}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.054311982162357, 0.8737226998228942}, {1.0525648739173952`,
+        0.8916236891103593}, {1.0507630808481727`, 0.9142598424836701}, {
+       1.0493436821287094`, 0.9355771284426158}, {1.0483066777590058`, 
+       0.9555755469871964}, {1.0476520677390615`, 0.9742550981174118}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.23559971629523663`, 0.3754489472072848}, {
+       0.24911135667128737`, 0.35443383300259024`}, {0.25677800262217004`, 
+       0.3424384246002092}, {0.2650567696111797, 0.3292158557444309}, {
+       0.2739476576383163, 0.3147661264352556}, {0.28345066670357993`, 
+       0.29908923667268317`}, {0.2961436775622332, 0.2774012217406834}, {
+       0.30945209365192045`, 0.25347512392490695`}, {0.3200242257235257, 
+       0.2331868854264377}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.32193628479429, 0.2295175867279266}, {0.3230053203725142, 
+       0.2274660753934613}, {0.3364327631238871, 0.1995292083144539}, {
+       0.3492305246959131, 0.17015910484602972`}, {0.3608947078784664, 
+       0.13985034714633376`}, {0.37215420273180416`, 0.10862268343048541`}, {
+       0.3815168189289279, 0.07751735308582045}, {0.38184529995681543`, 
+       0.07554245486828813}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.38252417235064456`, 0.07146092879316818}, {
+       0.38588346518270283`, 0.05126414157271067}, {0.3881934919965809, 
+       0.02668234025918665}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.8586478469290821`, 0.6096316086533167}, {
+       1.8725515630959761`, 0.6216825394018022}, {1.8908406592468732`, 
+       0.6333248907467993}, {1.9057527023016099`, 0.6416525271402719}, {
+       1.9233247838472214`, 0.6493071075998383}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.8409902493799206`, 0.4631484552037357}, {1.858947751209223,
+        0.45212949002864594`}, {1.8732626848257032`, 0.44631931216027604`}, {
+       1.8925355234287857`, 0.44067990713862804`}, {1.907302332318575, 
+       0.4369094070061182}, {1.9247452880675187`, 0.43343560885941546`}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.8422006940802174`, 0.518225905198905}, {
+       1.8620417374536649`, 0.5239984109295547}, {1.8782907344780257`, 
+       0.5270034085165689}, {1.9004828964222178`, 0.5298469847368981}, {
+       1.9165858875240902`, 0.5316150204649396}, {1.9355446746118357`, 
+       0.5331924733591616}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.8318392685710738`, 0.4164980530589628}, {
+       1.8423885607512307`, 0.3935025495275677}, {1.8613359215023726`, 
+       0.3673618878514642}, {1.8755384323110142`, 0.3540544744853661}, {
+       1.8938579835710037`, 0.3413664869974007}, {1.9094428536456345`, 
+       0.33189975209422673`}, {1.9277370066375785`, 0.3233279323800762}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.877439729839128, 0.40525917879682494`}, {
+       1.8981141999629831`, 0.3959892825535031}, {1.9251556112203445`, 
+       0.3881212840235612}, {1.9457021632206097`, 0.383249200167059}, {
+       1.969503968777577, 0.379557258018889}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.16749799097195125`, 0.4951328225162166}, {
+       0.15744690248858234`, 0.49352129232547953`}, {0.1385029298044189, 
+       0.49158975341470434`}, {0.12342908915847464`, 0.490580052139881}, {
+       0.10315584289660729`, 0.48961096194782616`}, {0.08886139821229119, 
+       0.4890180191810261}, {0.07218057225239924, 0.488475389235783}, {
+       0.058945851473265205`, 0.48823090961687093`}, {0.04440733641051689, 
+       0.4880430711769943}, {0.012776067420318029`, 0.48779987354486015`}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.1602047750363807, 0.4257794150239493}, {0.1433353842058422,
+        0.40547166957792524`}, {0.13027548144375556`, 0.3947787806054278}, {
+       0.11303102009952767`, 0.3842906587976009}, {0.09982840988985672, 
+       0.3771995540392043}, {0.08436639240114358, 0.370536184700668}, {
+       0.0713267680026927, 0.36711338533619164`}, {0.05688251444472887, 
+       0.3643179795525044}, {0.025219291410369733`, 0.36024129048857795`}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.17066857308164055`, 0.3559329254652638}, {
+       0.16520813757576364`, 0.33713110779957234`}, {0.15759445904578182`, 
+       0.31699805909840284`}, {0.1472544447462139, 0.29609111535132593`}, {
+       0.13361500193157871`, 0.27496761254791213`}, {0.1228503977141605, 
+       0.2600189968360694}, {0.11023962970478944`, 0.2454190128245676}, {
+       0.09978090151368915, 0.23693651900066126`}, {0.08823302799098515, 
+       0.22917660388901095`}, {0.07867965732505247, 
+       0.22405479723866487`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.0750330714987481, 0.22209976919784719`}, {
+       0.06282162264399092, 0.21555289876418013`}, {0.03250910151671918, 
+       0.2065261295289902}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.1843727445485514, 0.29299554786365833`}, {
+       0.18100767606006138`, 0.26785516690837635`}, {0.17614143520089237`, 
+       0.24107051133734708`}, {0.16955757592094578`, 0.21293211061129547`}, {
+       0.16132047157247392`, 0.18382142068002083`}, {0.15149449550772917`, 
+       0.15411989749332247`}, {0.14399195926192937`, 0.13292927608853294`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.14255374956516487`, 0.12904976661694392`}, {
+       0.1355710024514508, 0.11036921089213386`}, {0.12974154959249967`, 
+       0.09339074117021307}, {0.12419850076067325`, 0.07615169605004482}, {
+       0.11754249264124512`, 0.05016500308155453}, {0.1139680531117214, 
+       0.028696698445280625`}, {0.11279425993131817`, 
+       0.010411677716565673`}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.5368349569330542`, 0.46044108844761966`}, {
+       1.5078336985652485`, 0.455787821444027}, {1.477330885577544, 
+       0.450501335183623}, {1.4459125337311596`, 0.4444143882398622}, {
+       1.4141646587873136`, 0.43735973918619886`}, {1.3970936957826299`, 
+       0.4330803308833128}, {1.3801853867320881`, 0.4284558404123665}, {
+       1.3748926009663185`, 0.42688511157707915`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.3709259890568055`, 0.42570794855170957`}, {
+       1.3634397316356885`, 0.42348626777335996`}, {1.3468567304934307`, 
+       0.4181716129662931}, {1.314730548026533, 0.4063239425878914}, {
+       1.2843586972865866`, 0.39272971501707377`}, {1.2560751691312153`, 
+       0.37723052670887447`}, {1.2302139544180435`, 0.3596679741183277}, {
+       1.2228279111526361`, 0.3540964731401232}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.219524707436044, 0.3516047733115565}, {1.2055638964259712`,
+        0.341073739386607}, {1.1835819559977676`, 0.32039442527526263`}, {
+       1.1662705119072379`, 0.2946960245493506}, {1.1514202943629097`, 
+       0.2669650477542212}, {1.1376985598858234`, 0.23860474739160425`}, {
+       1.1290752645433195`, 0.21632667561785976`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.1275816872776643`, 0.21246805542658606`}, {
+       1.126233791543221, 0.20898579989401245`}, {1.116815553450894, 
+       0.17874563347411399`}, {1.1092334097246344`, 0.14852167634457714`}, {
+       1.1032880767246573`, 0.11894506140880082`}, {1.0987802708111765`, 
+       0.09064692157018375}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.8387871568257579`, 0.6553987452175228}, {1.84738225897005, 
+       0.6744337297766758}, {1.8589608676643274`, 0.694142924849137}, {
+       1.8742094633564068`, 0.7136313258515377}, {1.8938145264941058`, 
+       0.7320039282005097}, {1.9099093309953046`, 0.7451664978623118}, {
+       1.9286311068639206`, 0.7569750819523672}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.8462854966785656`, 0.31958269619220725`}, {
+       1.8558532721182184`, 0.30204241652493313`}, {1.8679767139321737`, 
+       0.28439857494180587`}, {1.883092065845226, 0.26735686790116225`}, {
+       1.9016355715821702`, 0.25162299186133935`}, {1.9189272819921899`, 
+       0.23875085824295164`}, {1.9388981618555927`, 0.22756184877722935`}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.8517787075071954`, 0.7510641448041788}, {
+       1.8654269099953602`, 0.7757603010446816}, {1.8824483723694465`, 
+       0.799532953466005}, {1.903204597416123, 0.8213616593028269}, {
+       1.9203564988555295`, 0.8371740198476876}, {1.9398036768624933`, 
+       0.8510313333230156}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.7977528279224755`, 0.26232924860972}, {1.7977918103562796`,
+        0.2444983170477646}, {1.7981925880439533`, 0.22579726873450723`}, {
+       1.7989551609854952`, 0.2062261036699477}, {1.8000345469572754`, 
+       0.1859236555984461}, {1.8013857637356618`, 0.16502875826436236`}, {
+       1.8030088113206557`, 0.14354141166769652`}, {1.804903689712256, 
+       0.12146161580844855`}, {1.8071093311421302`, 0.09715906084028722}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.8074769174939684`, 0.09303782497692999}, {
+       1.8095261739078914`, 0.0698844787450327}, {1.8104601035594472`, 
+       0.04578812097995279}, {1.810799301485324, 0.021569682238851362`}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.6561002145517545`, 0.40551940571457024`}, {
+       1.6390017530262302`, 0.39711627104142366`}, {1.6206419510307004`, 
+       0.3877148504385323}, {1.6009250610023833`, 0.3771198650543645}, {
+       1.5799063686744512`, 0.3651939371090312}, {1.5579054680480002`, 
+       0.35190101569801846`}, {1.5352419531241253`, 0.3372050499168124}, {
+       1.5135947985054192`, 0.321816402323553}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.510290431262674, 0.3193281515893561}, {1.4889786588984537`,
+        0.3025947131484432}, {1.466088941814483, 0.28287857425141477`}, {
+       1.443900035496232, 0.2619395880451322}, {1.4202705429955613`, 
+       0.23701606250041468`}, {1.3984985133059429`, 0.21079769419946648`}, {
+       1.3930651071338072`, 0.20329361477331123`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.3906385355344328`, 0.1999422757719422}, {
+       1.3789200546977414`, 0.18375787722589276`}, {1.3618712754413216`, 
+       0.15637000566329867`}, {1.3474422554850896`, 0.1291653055153248}, {
+       1.3357230747774527`, 0.10267500278561184`}, {1.3253588136941128`, 
+       0.07654189876502927}, {1.317815470904565, 0.052301148926633324`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.3171508755351213`, 0.04822289378017483}, {
+       1.3145562601922196`, 0.030129232639425463`}, {1.3134675738060873`, 
+       0.010367339795794558`}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.874001930289666, 0.8402307853433008}, {1.8840444569707195`,
+        0.8563699889576986}, {1.894849370298964, 0.87203950187793}, {
+       1.9063483334817133`, 0.8871377115752244}, {1.9184730097262823`, 
+       0.9015630055208111}, {1.9342982562927302`, 0.9194893345333757}, {
+       1.951181661013066, 0.9359459822527703}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.13763568637444704`, 0.20577992218334193`}, {
+       0.12042155698427964`, 0.17819075425395872`}, {0.09974291451322209, 
+       0.15232951504288972`}, {0.0751907044610635, 0.12966042156562185`}, {
+       0.061849082865041094`, 0.11935106515163763`}, {0.047292548533625495`, 
+       0.11039074340108976`}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.28868994512698215`, 0.6550191722073112}, {
+       0.3005749236647768, 0.6686645397837527}, {0.31350257147141075`, 
+       0.6839295409599482}, {0.3274428211709849, 0.7009500655344199}, {
+       0.34202153115864137`, 0.7195266743011675}, {0.35686455982952253`, 
+       0.7394599280541909}, {0.37357680019553524`, 0.7635732206238663}, {
+       0.38844512826258304`, 0.786824668793495}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.39063572268457547`, 0.7903339935220701}, {
+       0.40588342071053063`, 0.8164964522330402}, {0.4204626694522617, 
+       0.844478211251816}, {0.43338859171119537`, 0.8727412436710464}, {
+       0.44422642391625383`, 0.9006914240851805}, {0.4540202110943747, 
+       0.9284851784967666}, {0.45749442884331276`, 0.941162930203283}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.45858797995886513`, 0.9451534024543657}, {
+       0.4613063512373032, 0.9550729983474835}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.20390739651888423`, 0.2635607491448904}, {
+       0.20419333884987403`, 0.23406431343148817`}, {0.20360666564566687`, 
+       0.202331050863212}, {0.2020597920869491, 0.16861408537858877`}, {
+       0.20099977738890165`, 0.1511071832801485}, {0.1998467070307322, 
+       0.1332952939276244}, {0.19860058101244082`, 0.11517841732101657`}, {
+       0.1973703933630454, 0.09825588189093398}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.19706541530296273`, 0.09412954005482957}, {
+       0.19532496104052435`, 0.07080010523181687}, {0.1936206742461872, 
+       0.04452474455041682}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.12281914877555233`, 0.328433927186049}, {0.101337721236118,
+        0.31202111836217566`}, {0.07364592495333383, 0.2981260817776465}, {
+       0.058114206874582616`, 0.29203071316567697`}, {0.040837273926534044`, 
+       0.2870698333381635}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.73435611972703, 0.3021437876598079}, {1.7251753976816537`, 
+       0.2839919006219626}, {1.7135363591019876`, 0.2599942390275153}, {
+       1.7015092382014998`, 0.23365141724376676`}, {1.6895081198351825`, 
+       0.20523886126523344`}, {1.6779470888580286`, 0.17503199708643188`}, {
+       1.6694911904075966`, 0.15007998317418297`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.668163198376323, 0.14616128951508414`}, {
+       1.6673229685795823`, 0.14368190477546605`}, {1.6581325823093882`, 
+       0.11183966440043992`}, {1.6499524646078447`, 0.08086243044937477}, {
+       1.6436825886162714`, 0.05056760032551983}, {1.6417412205568276`, 
+       0.023548199594343733`}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.11812546138715313`, 0.14059288687632357`}, {
+       0.10146749598067932`, 0.11567587481971299`}, {0.08479484776349977, 
+       0.09237768342014471}, {0.06753007162822537, 0.06989415133177335}, {
+       0.0542215330927214, 0.05289856783112032}, {0.04050196830043099, 
+       0.03679253544515636}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.6977466291880772`, 0.6125113638440455}, {
+       1.6707276989698134`, 0.6323441474510959}, {1.65539584022677, 
+       0.6440559153281796}, {1.6387629936443293`, 0.6571748449921324}, {
+       1.621187582959348, 0.6716501138438855}, {1.6030280319086823`, 
+       0.6874308992843708}, {1.590150351388482, 0.6992741193141616}, {
+       1.5771800822525854`, 0.7118225349622972}, {1.570763933012566, 
+       0.7183323775612167}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.5678594921815714`, 0.721279231186397}, {
+       1.5641172245009929`, 0.7250761462287776}, {1.550961778133704, 
+       0.739034953113603}, {1.5379469634583693`, 0.7536007541494547}, {
+       1.525306000782639, 0.768675347869014}, {1.5130388901065126`, 
+       0.7842587342722811}, {1.501145631429991, 0.8003509133592559}, {
+       1.4898347360927933`, 0.8167396795819044}, {1.479314715434639, 
+       0.8332128273921924}, {1.4695855694555293`, 0.8497703567901205}, {
+       1.468033825601887, 0.8526595041674804}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.466076056164816, 0.8563046189338847}, {1.4606472981554632`,
+        0.8664122677756878}, {1.451611729975771, 0.8832422743949625}, {
+       1.4435616302343748`, 0.8997804713344623}, {1.4364803077786596`, 
+       0.9161377975277012}, {1.43041783606647, 0.9319814361741361}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.6162644629619516`, 0.5722377730672733}, {
+       1.5911577378263546`, 0.5804194682024941}, {1.5644249503788314`, 
+       0.5899157898163646}, {1.548232381921076, 0.5961602751712572}, {
+       1.531587697473712, 0.6029699442509759}, {1.5144908970367392`, 
+       0.6103447970555207}, {1.4969419806101578`, 0.6182848335848914}, {
+       1.4791550509965568`, 0.6268543726781444}, {1.4633944308052678`, 
+       0.6350514204586869}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.4597492836098205`, 0.6370081847805917}, {
+       1.4435094606160626`, 0.6460749150734663}, {1.4256507998491696`, 
+       0.6567259183755352}, {1.4080213444505743`, 0.6680901147779125}, {
+       1.3908742101730036`, 0.6801868759779672}, {1.3742093970164588`, 
+       0.6930162019757}, {1.3580269049809388`, 0.7065780927711106}, {
+       1.3416947414062044`, 0.72019270625419}, {1.3263970294231953`, 
+       0.7342029269466769}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.323469102374012, 0.7371259559945722}, {1.3113041609624112`,
+        0.7493653710550352}, {1.2973882358787248`, 0.7647992632374685}, {
+       1.2815650993254575`, 0.7840919399181148}, {1.26718867217659, 
+       0.8038170313390697}, {1.257687007560559, 0.8226661085229914}, {
+       1.2493644907457078`, 0.8415402577063731}, {1.242097528914348, 
+       0.8599537889917526}, {1.2367534129900224`, 0.8756433127820915}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.2354095337316657`, 0.8795565641576405}, {
+       1.2296881770235375`, 0.8959980676831854}, {1.2244079201503535`, 
+       0.9132581323926452}, {1.220086549052825, 0.9298487931399975}, {
+       1.216724063730951, 0.9457700499252417}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.1596239583524426, 0.6325023057053382}, {0.1514302025417454,
+        0.6484169497115958}, {0.1404921641723302, 0.6649666601347664}, {
+       0.12612457422884432`, 0.6814425653949419}, {0.10764216369593517`, 
+       0.6971357939122148}, {0.09312430489689724, 0.7079514033744302}, {
+       0.07631318188656637, 0.717829012570301}, {0.06363511033786233, 
+       0.7222229580159779}, {0.049833161473841286`, 0.7257305139144062}, {
+       0.033656509322641276`, 0.7284212041646151}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.02957498564725298, 0.7291000909859868}, {
+       0.02002690329420003, 0.730688239872136}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.3388670386144442, 0.6115096469580661}, {0.3539885086262487,
+        0.6206806799172901}, {0.37028062786604865`, 0.6308644509128345}, {
+       0.3875735258958713, 0.6421196099595214}, {0.4056973322777435, 
+       0.6545048070721726}, {0.4246524193285817, 0.6682576643680979}, {
+       0.44430296516139056`, 0.6834726262826164}, {0.46427480803233034`, 
+       0.6999935763075658}, {0.47312487733759157`, 0.7078447820664419}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.4762200513190466, 0.7105906190706195}, {0.4841937861975607,
+        0.7176643979347833}, {0.4965550211981453, 0.7293754219355107}, {
+       0.5086666253114979, 0.7415249147674695}, {0.5205285985376182, 
+       0.7541128764306595}, {0.5321409408765067, 0.7671393069250808}, {
+       0.5433651410905669, 0.7804989967741773}, {0.554062687942203, 
+       0.7940867365013927}, {0.5738778215582032, 0.8219463655901807}, {
+       0.5827930956945572, 0.836402716436938}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.5849649670604511, 0.8399244628217586}, {0.5912623799319896,
+        0.8501358829649285}, {0.6058924012710449, 0.8780729773991196}, {
+       0.6191451540927345, 0.9058838603630324}, {0.6294411690940288, 
+       0.9325740348276816}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.4327383147243926, 0.5746173450264642}, {0.4559816414797509,
+        0.5819817097909957}, {0.4805367044188351, 0.5902585187016516}, {
+       0.5059768929259394, 0.599550558349484}, {0.5318755963853579, 
+       0.6099606153255456}, {0.5487499448888369, 0.6173988251393724}, {
+       0.5655667666137858, 0.6253986529159954}, {0.5823260615602048, 
+       0.6339600986554148}, {0.5861257976808931, 0.6360356414561643}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.5897569876698061, 0.6380191187293905}, {0.5990278297280938,
+        0.6430831623576305}, {0.6154834408521167, 0.6527951050521029}, {
+       0.6315042646669373, 0.6631231877682922}, {0.6470903011725557, 
+       0.6740674105061983}, {0.6622415503689719, 0.6856277732658215}, {
+       0.6768234463519871, 0.697772292601869}, {0.6907014232174018, 
+       0.7104689850690487}, {0.7038754809652169, 0.7237178506673604}, {
+       0.7163456195954317, 0.7375188893968041}, {0.7187557169306045, 
+       0.7401899059275345}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.7215275506575305, 0.7432618207406866}, {0.7288669737863401,
+        0.7513958160847669}, {0.7405819777382614, 0.7656731399868235}, {
+       0.7514976049823748, 0.7804223803257628}, {0.7615929349251416, 
+       0.7954289794332183}, {0.7699779904627277, 0.8125380502467787}, {
+       0.7774327746428895, 0.8297315602414412}, {0.7840595464041729, 
+       0.8466384708835624}, {0.789824219433729, 0.863382461684357}, {
+       0.795640375010269, 0.8799723583064051}, {0.7981558643120628, 
+       0.8879902471602324}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.7993944462176994, 0.8919381121138519}, {0.8006973969490496,
+        0.8960911467296337}, {0.8049952852500708, 0.9117388269540434}, {
+       0.8085340399133323, 0.9269153989796333}, {0.8136758604109118, 
+       0.9553938097264104}, {0.8164645705261221, 0.9810649702620202}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.13612445788068642`, 0.7356444833711349}, {
+       0.12177890743808051`, 0.754653410586313}, {0.1042733598313821, 
+       0.7724163861842581}, {0.08323612159101791, 0.7880854928634723}, {
+       0.06568294731013989, 0.7993412310050362}, {0.04584659818495442, 
+       0.8086461064399894}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.6806145543279274`, 0.34211750556609766`}, {
+       1.66654190897672, 0.3283267912065609}, {1.651491488034879, 
+       0.3129605661306251}, {1.6355380460227802`, 0.29590517902069324`}, {
+       1.619075241905989, 0.2773812270472002}, {1.6024967346500703`, 
+       0.257609307380581}, {1.5835748750864744`, 0.23320480037093516`}, {
+       1.5723195370488308`, 0.21731500654064198`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.569927923725328, 0.21393863148152426`}, {1.565182552260773,
+        0.2072393236537404}, {1.5478486822280417`, 0.18015976135002618`}, {
+       1.532102181043356, 0.15241299758082186`}, {1.5183269381121698`, 
+       0.12458191391642448`}, {1.5069068428399366`, 0.09724939192713108}, {
+       1.4966643213971802`, 0.07016615077538968}, {1.4956480638830205`, 
+       0.06670510048430299}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.4944823660911761`, 0.06273510407535293}, {
+       1.4891010939162863`, 0.04440820034493438}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.24949749544755218`, 0.7145839124673743}, {
+       0.2594829535112184, 0.7427797784693457}, {0.26460937560080694`, 
+       0.7580234895219954}, {0.26969606974510774`, 0.7739797976895874}, {
+       0.27474303594412086`, 0.7906487029721219}, {0.27975027419784626`, 
+       0.8080302053695986}, {0.28457990171618464`, 0.8259345921087541}, {
+       0.2890940357090366, 0.8441721504163244}, {0.2932926761764023, 
+       0.8627428802923102}, {0.29548303924020886`, 0.8734059863002469}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.2963155812865013, 0.8774589600936661}, {0.2971758231182815,
+        0.8816467817367105}, {0.3007560628939193, 0.8989725385621539}, {
+       0.303929132448342, 0.9162172689694741}, {0.30673340221423784`, 
+       0.9335067997993822}, {0.30905376089354203`, 0.9504636505297441}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.8475215351761283`, 0.5562624110244515}, {
+       1.8739201819546707`, 0.5733126197860705}, {1.8954374565408179`, 
+       0.5814929392835051}, {1.9244771997965175`, 0.5884350806618588}, {
+       1.9448176732918026`, 0.5923561186170649}, {1.968420027929152, 
+       0.5953525988348001}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.9584513034723683`, 0.32904453195973704`}, {
+       1.9841880758081711`, 0.3250231052139377}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.15381270705762365`, 0.5332750593337625}, {
+       0.13047299699973988`, 0.543217437902998}, {0.1117156524278236, 
+       0.5481702640251678}, {0.08647990693786897, 0.5526192890919485}, {
+       0.06990315468035325, 0.555062654350764}, {0.05078511835924706, 
+       0.5571363453471185}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.898478880807505, 0.6752182793490166}, {1.9239690435478174`,
+        0.687071209316114}, {1.9446963489062894`, 0.6950159295415637}, {
+       1.968602279210325, 0.7010403913388449}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.572259616759775, 0.39662125136152565`}, {
+       1.5553280064461665`, 0.38887106684002615`}, {1.5378162712499823`, 
+       0.38043637374191674`}, {1.5197244111712216`, 0.37131717206719733`}, {
+       1.501303791291234, 0.3614372496560001}, {1.4828057766913676`, 
+       0.35072039434845675`}, {1.464230367371623, 0.33916660614456756`}, {
+       1.4455775633320003`, 0.32677588504433247`}, {1.4288157423390255`, 
+       0.31473963629551527`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.4255104028161036`, 0.3122524228740407}, {1.409318050962482,
+        0.29951339287560386`}, {1.392030912599927, 0.28464905898730514`}, {
+       1.3753055194521748`, 0.2689626665630502}, {1.3589711524208545`, 
+       0.253696449396492}, {1.3435175293521042`, 0.23784563398470457`}, {
+       1.3288650001854125`, 0.22131074984003213`}, {1.3152525151023144`, 
+       0.20439020842544195`}, {1.309750683025086, 0.1950185757991908}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.3076559192267234`, 0.19145042677510887`}, {
+       1.3046118615401303`, 0.18626528300273895`}, {1.2951174576977638`, 
+       0.16802083940671134`}, {1.286719228114836, 0.15010888858677643`}, {
+       1.2794338646114742`, 0.13237876022646183`}, {1.266890072850087, 
+       0.10090450792461544`}, {1.2577314703160378`, 0.0711881493078657}, {
+       1.251644132967709, 0.04365522908137071}, {1.2507439626307024`, 
+       0.036917747261317226`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.2501960221007147`, 0.032816590838479376`}, {
+       1.2483141367634831`, 0.018731291950288536`}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.42097375106358803`, 0.376823169177858}, {0.440938343256865,
+        0.3659269222289041}, {0.46161874969322114`, 0.3539206794302449}, {
+       0.4827686235046811, 0.3407733725652041}, {0.5041907912941219, 
+       0.32627380620713087`}, {0.525648740887739, 0.3103548866973543}, {
+       0.5468371172525343, 0.29320169847116867`}, {0.5574032857866325, 
+       0.2838714139563327}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.5605047659788759, 0.28113270195137324`}, {0.56745056535551,
+        0.2749993259638685}, {0.5914519191763357, 0.25135109953870804`}, {
+       0.6137277672509386, 0.22630146526047534`}, {0.6339534776359319, 
+       0.20025296094894235`}, {0.6518044183879286, 0.17360812442388107`}, {
+       0.6637509878651139, 0.1528259761860577}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.665813050658279, 0.14923882970646815`}, {
+       0.6671791416069498, 0.1468623897873898}, {0.6799761993930172, 
+       0.1205111911415669}, {0.6914844244626075, 0.09435726049107815}, {
+       0.7004300344755097, 0.06930134138640467}, {0.70498074987527, 
+       0.046535294729352014`}, {0.7074941466239196, 
+       0.02562134987579074}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.1032412269744996`, 0.09594223118039444}, {
+       1.099943524806466, 0.07136329565054578}, {1.097200483711074, 
+       0.04748185158836517}, {1.0954186166901667`, 0.02546363308044474}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.8473508480225869`, 0.48782066120969847`}, {
+       1.87394483943853, 0.4838379083513501}, {1.8963339941346107`, 
+       0.4819216431256348}, {1.9271262530044884`, 0.4803162016141045}, {
+       1.9477264813504227`, 0.47946259518562223`}, {1.9716349985899713`, 
+       0.4788224531242086}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.15196147882091765`, 0.4548044400704954}, {
+       0.12295287041048594`, 0.44125834831184035`}, {0.09998121370422342, 
+       0.4347663476165787}, {0.06891971030256061, 0.4294354411383269}, {
+       0.050280211293655605`, 0.42691327277877017`}, {0.029075446757124073`, 
+       0.42500365907314946`}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.4922097293529468`, 0.760314085595386}, {1.479652148740617, 
+       0.7750812703130003}, {1.4674952868579874`, 0.7903313398752327}, {
+       1.4559162927090432`, 0.8058852612341314}, {1.4450923152977686`, 
+       0.8215640013417438}, {1.435023354624164, 0.83736756019807}, {
+       1.425709410688229, 0.8532959378031097}, {1.4172254067326537`, 
+       0.8691411086716023}, {1.4096462660001277`, 0.8846950473182864}, {
+       1.403667819420041, 0.8992207553430024}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.402093043800769, 0.9030469550996714}, {1.3972025742042238`,
+        0.9149292279462301}, {1.3865686088544185`, 0.9445809441305572}, {
+       1.3796259423795947`, 0.9720069342294004}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.3683072604053097, 0.3370296605559379}, {0.384806180749373, 
+       0.3231536488814854}, {0.40187328394615035`, 0.30806215848324175`}, {
+       0.419409621256092, 0.29153600308591004`}, {0.4372287638416616, 
+       0.273532321873891}, {0.4549911926938477, 0.2543168235860568}, {
+       0.47235738880363826`, 0.23415521696127958`}, {0.4841016963396616, 
+       0.21927214791974403`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.48666479838653076`, 0.21602403604877615`}, {
+       0.49079232179554344`, 0.2107933985098268}, {0.5080435668347186, 
+       0.18655116014306022`}, {0.5237891745113827, 0.16181617717294883`}, {
+       0.537707195415755, 0.13697612491146172`}, {0.5496355909856967, 
+       0.11243494468418447`}, {0.5594123226590697, 0.08859657781670273}, {
+       0.5657487400577835, 0.07149223368245405}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.567186081724955, 0.06761231464195849}, {0.5681132223841583,
+        0.06510961762911874}, {0.5745682383123126, 0.04285082527786915}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.7065111532061854`, 0.6991305001930375}, {
+       1.6971626605388028`, 0.7137949795451133}, {1.687486645253527, 
+       0.7295108510133486}, {1.6774831073503578`, 0.7462781145977432}, {
+       1.6674085364871347`, 0.763973800727015}, {1.657519422321698, 
+       0.7824749398298823}, {1.6478157648540477`, 0.8017815319063447}, {
+       1.638297564084183, 0.8218935769564023}, {1.6292928417086903`, 
+       0.8424286109842698}, {1.62836694595893, 0.8447623490563406}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.6268410828639752`, 0.8486083163786722}, {
+       1.6211296194241536`, 0.8630041699941612}, {1.6138078972305738`, 
+       0.8836202539860771}, {1.6073276751279502`, 0.9042768629600169}, {
+       1.6013155668846277`, 0.9233622684535716}, {1.596301009567693, 
+       0.9419033994513607}, {1.5922580141082205`, 0.9600402623913422}, {
+       1.5892645477129856`, 0.9773528379596415}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.7326325872147403, 0.4978064242742574}, {0.7609608268596768,
+        0.49748067813466734`}, {0.7871497528407054, 0.4971049370415595}, {
+       0.8111993651578264, 0.4966792009949339}, {0.8331331972571222, 
+       0.4961876116055963}, {0.8529747825846752, 0.495614310484353}, {
+       0.8863812129245516, 0.4942225730461482}, {0.8980579486015748, 
+       0.4934209637849457}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.9021858316911011, 0.4931375841311409}, {0.9126772637386211,
+        0.49241734610185006`}, {0.9331215425880486, 0.4901119870729888}, {
+       0.9617388675939188, 0.48281572993342164`}, {0.9781649390544388, 
+       0.4691785241262117}, {0.9875074387623524, 0.44307656140169377`}, {
+       0.9901635388645527, 0.42959979819905747`}, {0.9922375548923162, 
+       0.4130949828458002}, {0.9933324592448156, 0.3942355310712763}, {
+       0.9936010758328302, 0.387694474772413}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.993770848358379, 0.3835603605845178}, {0.994251240488573, 
+       0.37186237874224004`}, {0.995093727518225, 0.3477113825449658}, {
+       0.9957836261196663, 0.32000469861121555`}, {0.9963428416820929, 
+       0.2889967855527118}, {0.9967932795947015, 0.2549421019811772}, {
+       0.9969815002300411, 0.23699686875863143`}, {0.99715011304836, 
+       0.21873923791904415`}, {0.9971552474082955, 0.2180993586580927}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.997188446229283, 0.2139618931697445}, {0.9972991180496585, 
+       0.20016920946241534`}, {0.9974285152339367, 0.18128678338874515`}, {
+       0.997560126881368, 0.15820995882705496`}, {0.9976678584094958, 
+       0.13533025122292283`}, {0.9977555831989957, 0.11299914167691401`}, {
+       0.9978271746305435, 0.09156811128959375}, {0.997883895944603, 
+       0.0711850998580248}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.1386289103502238`, 0.47912773518337876`}, {
+       1.1221525036632458`, 0.4758527487633885}, {1.094636514430444, 
+       0.4676972082519203}, {1.0741782013336798`, 0.459797025583616}, {
+       1.0580486139533585`, 0.44997921407496644`}, {1.0576098872096105`, 
+       0.44956170036823767`}, {1.0571745051432682`, 0.4491407729493958}, {
+       1.056526828119982, 0.44850379182190986`}, {1.0560988937572044`, 
+       0.448075098277791}, {1.0556742350479782`, 0.44764291481419055`}, {
+       1.051601116965354, 0.44312108952716756`}, {1.0478316083972925`, 
+       0.438220582513816}, {1.0443450065776267`, 0.43291318322006067`}, {
+       1.0336309668545929`, 0.40932650397974585`}, {1.025840817436627, 
+       0.3789733850261347}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.3181725544373822, 0.3000158534950026}, {
+       0.33120784059541736`, 0.2826887844791492}, {0.3446670116747815, 
+       0.26397751825198035`}, {0.3582242881947832, 0.24409723808052122`}, {
+       0.37284837512170066`, 0.22108575270076591`}, {0.3871113211795732, 
+       0.196786540308801}, {0.4006311027416414, 0.17156044887002192`}, {
+       0.4061091340087633, 0.16016111945266778`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.4079012905691005, 0.15643179006359156`}, {
+       0.4130256961811454, 0.14576832634982417`}, {0.42398236790916566`, 
+       0.11987455480462433`}, {0.43318838433678275`, 0.09434351629083898}, {
+       0.44151907311419814`, 0.06899384429276086}, {0.447797283657181, 
+       0.04468293106823161}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.8684907701844833, 0.06566340622436138}, {
+       0.8717084636986216, 0.04255683920012125}, {0.8737518003236834, 
+       0.021281454392406113`}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.0852794189284188, 0.8351733671778847}, {
+       0.05669962230291337, 0.8529650024321492}, {0.04103041534835529, 
+       0.860443181400684}, {0.02384777088392373, 0.8661346522490236}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.5986589901212283`, 0.7341382367710066}, {
+       1.5872851442992761`, 0.7477567711855172}, {1.5760844845437871`, 
+       0.7619080140557857}, {1.5650570108547608`, 0.7765919653818114}, {
+       1.5542027232321969`, 0.7918086251635947}, {1.5437232157307856`, 
+       0.807385606101238}, {1.5338200824052164`, 0.8231505208948433}, {
+       1.524493323255489, 0.8391033695444109}, {1.5157429382816041`, 
+       0.8552441520499406}, {1.5076993831350647`, 0.8713514074945969}, {
+       1.5075241102718118`, 0.8717369706827803}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.5058118231813018`, 0.8755036397349617}, {
+       1.5004931134673742`, 0.8872036749615437}, {1.4885924305685403`, 
+       0.91814324596231}, {1.478366318627404, 0.9485728410076575}, {
+       1.4718335518622978`, 0.9768022773566378}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.4771138133521652, 0.42181944942888}, {0.5041989446034048, 
+       0.4127293241668971}, {0.5323801986704602, 0.4025511533472546}, {
+       0.5608953450289571, 0.39104488232813817`}, {0.5889821531545212, 
+       0.37797045646773364`}, {0.6166406230471528, 0.36332787576604125`}, {
+       0.628623846610259, 0.3561939819398343}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.6321791223535781, 0.35407744296831634`}, {
+       0.6438707547068517, 0.3471171402230607}, {0.6605743757785678, 
+       0.3360542564275881}, {0.6765998156138793, 0.3243075727000787}, {
+       0.6919470742127865, 0.3118770890405323}, {0.7066161515752893, 
+       0.29876280544894906`}, {0.7205127457322196, 0.2850344560840241}, {
+       0.7335425547144087, 0.2707617751044524}, {0.7457055785218568, 
+       0.255944762510234}, {0.7543175543845504, 0.24423364964809657`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.7567687878489343, 0.24090030638163393`}, {
+       0.7570018171545642, 0.240583418301369}, {0.7674302495608838, 
+       0.22484422692558742`}, {0.7769898546891687, 0.2088936728306193}, {
+       0.7856806325394192, 0.19273175601646467`}, {0.7935025831116352, 
+       0.17635847648312356`}, {0.8020648515473023, 0.15826732289489742`}, {
+       0.8096575837970262, 0.14032242997301594`}, {0.8162277536879293, 
+       0.12238368500537604`}, {0.821934439738644, 0.10487142612828695`}, {
+       0.8247302709092419, 0.09103583272669104}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.825549811928145, 0.08698021004363451}, {0.8275035143937782,
+        0.07731201790583242}, {0.8311976034324062, 0.051875660449756306`}, {
+       0.8340720093487712, 0.027653374275348443`}, {0.8353070490206107, 
+       0.005859230664277071}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.6192703781661263, 0.45030253103119333`}, {
+       0.6487967608799312, 0.4441710731370434}, {0.6775498589721131, 
+       0.43723586515742624`}, {0.7052827333638642, 0.4293864829601158}, {
+       0.7315528838473704, 0.4205141160286654}, {0.7560742591180227, 
+       0.4105086629540049}, {0.7764557320696523, 0.40043368319621647`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.7801066421888954, 0.39849353453384023`}, {
+       0.7998216211247623, 0.3866490564904074}, {0.8189303407325992, 
+       0.3723962831488536}, {0.8361299394152799, 0.356352302967091}, {
+       0.8515194342651028, 0.33861343428631074`}, {0.8651978423743646, 
+       0.3192759954477034}, {0.8772320632548685, 0.2981342884533922}, {
+       0.8870711848062444, 0.2766306271152804}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.8886232301339791, 0.27279777277709105`}, {
+       0.8967832822470878, 0.2510045531658621}, {0.9045753967365873, 
+       0.22593400076878836`}, {0.9116616310470513, 0.19867285272792165`}, {
+       0.9175275073797992, 0.17107223035296049`}, {0.9222977030829793, 
+       0.14363444697658778`}, {0.9260968955047404, 0.1168618159314865}, {
+       0.9266302110791736, 0.11218693624934366`}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.927099191121277, 0.10807600198216107`}, {
+       0.9290299238697196, 0.09115179475844597}, {0.9312016274025539, 
+       0.0669018409982555}, {0.9329926685193156, 0.04338192094449006}, {
+       0.9341271307390658, 0.021754615112196143`}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.601203600718391, 0.8126744938438513}, {0.6197497466363375, 
+       0.8416166811394145}, {0.6353467377352456, 0.8704176723511777}, {
+       0.6479740478506865, 0.8984940500284777}, {0.6576111508182308, 
+       0.9252623967206514}, {0.665753150211827, 0.9513767279202617}, {
+       0.6682682437606102, 0.9628918948833571}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.6691511461074695, 0.9669341969842519}, {0.6710214569963008,
+        0.9754972749533425}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.27435166967077684`, 0.24675337513717344`}, {
+       0.28459045069626765`, 0.21898826929114862`}, {0.2946147850795932, 
+       0.18925033094867294`}, {0.30403274591535195`, 0.15789041286533329`}, {
+       0.3124180854239773, 0.1256221061878091}, {0.31934455582590277`, 
+       0.09315900206277995}, {0.32032645044739383`, 0.08799992546527853}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.3211000471884279, 0.08393528883806954}, {
+       0.32510513143627257`, 0.06289175121007043}, {0.3291904910936935, 
+       0.03353708916530361}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.8453862859126577`, 0.12547411218535134`}, {
+       1.8505856128012534`, 0.10657422356257173`}, {1.8555971516083312`, 
+       0.08734792368453703}, {1.8604209023338905`, 0.06779521255124714}, {
+       1.8659661685382838`, 0.044680345825095266`}, {1.8699066723030675`, 
+       0.020442300128470144`}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.9493233850564509`, 0.07485606298093918}, {
+       1.9629153352501931`, 0.06588148013567965}, {1.9783990684832207`, 
+       0.059135769906399065`}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.8627891581209406`, 0.2368689568727826}, {
+       1.8723374944518465`, 0.22225679454523314`}, {1.883215563778417, 
+       0.20808894653351073`}, {1.8955080802114317`, 0.19461489396949924`}, {
+       1.9093462785965265`, 0.18217910853303898`}, {1.9248613937793364`, 
+       0.17112606190397014`}, {1.9412149673610044`, 0.16076438467859705`}, {
+       1.9593823504265295`, 0.15225154635931015`}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.9098528762383578`, 0.29063569253152677`}, {
+       1.934203205937721, 0.28006664917327695`}, {1.9565689497374554`, 
+       0.27214348607874905`}, {1.9821388438076093`, 0.2667217137400596}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.927624767495326, 0.7807302364736}, {1.9489425035375816`, 
+       0.7914696728043555}, {1.9733394507370647`, 0.7993560530372599}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.0881060126488999, 0.9281586465304114}, {
+       0.07586226718224134, 0.9507519903670274}, {0.06892846254481447, 
+       0.9639465694494544}, {0.06268632823268581, 0.9775500689524016}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.19104314781744505`, 0.7564830108163806}, {
+       0.1887650467331769, 0.7792062776512145}, {0.18570882290121915`, 
+       0.802941603520016}, {0.18195186238565922`, 0.8275380355357346}, {
+       0.17757155125058452`, 0.8528446208113196}, {0.17286984750376186`, 
+       0.8787947536423156}, {0.1681487091529581, 0.9053218283242674}, {
+       0.16556792698079856`, 0.9199502776195886}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.16484906450473422`, 0.9240249505597758}, {
+       0.1632915158120262, 0.9328534841423709}, {0.15907321851808062`, 
+       0.9609279705828342}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.3302897665789646`, 0.5772776667701044}, {1.313136893109348,
+        0.5831756869736673}, {1.2964808291901602`, 0.5895352261824739}, {
+       1.2803215748214016`, 0.5963562843965243}, {1.2498952215200365`, 
+       0.6116029054833241}, {1.222259559990118, 0.6291354978770342}, {
+       1.1960192443459228`, 0.6478110759241994}, {1.1863679803211278`, 
+       0.6565626623150813}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.1833028842365394`, 0.6593420343343023}, {
+       1.1728381498021458`, 0.6688312605356523}, {1.1550153995013561`, 
+       0.6954766752602302}, {1.139861965839121, 0.7245723571938345}, {
+       1.1259221313385113`, 0.7544566880856883}, {1.114409495161153, 
+       0.7859183168940411}, {1.108841764536844, 0.8051673768129166}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.1076921035862666`, 0.8091420469284991}, {
+       1.1050736380141313`, 0.8181947479470226}, {1.097664140604532, 
+       0.8505234855727626}, {1.0919528372357181`, 0.8821362947323315}, {
+       1.0877115622110525`, 0.9122649403868}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.4611541474132643`, 0.6728648862466236}, {1.434739545515277,
+        0.6928488647556041}, {1.409191073989983, 0.7146181191833276}, {
+       1.3848926904110357`, 0.7377657477575698}, {1.370556912112034, 
+       0.7528240700459896}, {1.3570643492601913`, 0.7682889300571265}, {
+       1.3444150018555074`, 0.7841603277909809}, {1.3422737107760876`, 
+       0.7871126747671056}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.339844450285473, 0.7904620652038457}, {1.332608869897982, 
+       0.8004382632475525}, {1.3217088523101905`, 0.8169067533805151}, {
+       1.3117778480147066`, 0.8333498151435421}, {1.3028158570115316`, 
+       0.8497674485366336}, {1.2948228793006644`, 0.8661596535597894}, {
+       1.2877628571842035`, 0.8823175584364383}, {1.2815997329642461`, 
+       0.8980322913900087}, {1.2719641782138427`, 0.9281322415279134}, {
+       1.2690702782456176`, 0.938913146013596}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.267997602651457, 0.9429092803830436}, {1.2641224192564469`,
+        0.9573458478196611}, {1.2595436841463226`, 0.9838549052327399}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.5390015175857951, 0.8259869107807394}, {0.5558495330591905,
+        0.8540271189878875}, {0.5700855274436876, 0.8818103461508232}, {
+       0.581609379487333, 0.908808814129088}, {0.5903209679381736, 
+       0.9344947447822237}, {0.5976264245926116, 0.9595244067727947}, {
+       0.6012802788133929, 0.9781914306406801}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.602075083170937, 0.9822519735677055}, {0.6021510463421095, 
+       0.9826400586536653}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.9031178296529543`, 0.9372823260162911}, {
+       1.9127804765573284`, 0.9603203449211222}, {1.921103420137874, 
+       0.983989649029579}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.953514061275326, 0.9481212980681428}, {1.9613922575152056`,
+        0.9564528045357047}, {1.9689023908265624`, 0.9649690205897938}, {
+       1.9763729508684607`, 0.9733497121247945}, {1.9801699246386992`, 
+       0.9774364549449512}, {1.9841935052596018`, 0.9812594869997956}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.9355512309346694`, 0.8675358300367056}, {
+       1.9564722216894452`, 0.8800707583980635}, {1.9804611521254285`, 
+       0.8890182715683637}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.9359665797842187`, 0.6395757123459891}, {
+       1.9583133268735429`, 0.6447068370389866}, {1.9839692746598072`, 
+       0.6481698386272026}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.6373385082802945, 0.5526447113874833}, {0.6548779481777193,
+        0.5565555838371352}, {0.672184516023777, 0.5607568033802706}, {
+       0.6891158873723249, 0.5652937784484153}, {0.7055297377772194, 
+       0.5702119174730954}, {0.7368048757560491, 0.5811916873920618}, {
+       0.765715028087546, 0.5939096131190232}, {0.7919652928989902, 
+       0.6085791946358331}, {0.792185092218548, 0.6087171884576545}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.7956893245853803, 0.610917206263999}, {0.8168856139504078, 
+       0.624224604047567}, {0.8389664986253108, 0.6419339618755538}, {
+       0.8556970696978456, 0.6639699580406625}, {0.8701970262641905, 
+       0.6884474206080688}, {0.8836680518404643, 0.7139273274587932}, {
+       0.8941116411911005, 0.7390772268979333}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.8955843018849946, 0.7429408663286889}, {0.9046320140404734,
+        0.7704344129390871}, {0.9125159446399848, 0.800526803726529}, {
+       0.918912848238945, 0.8310278218935938}, {0.9240025658411696, 
+       0.8612759940953958}, {0.9274835127941417, 0.8879335770436203}, {
+       0.9291682649451699, 0.904578558331637}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{0.9295849306456045, 0.9086951239539816}, {0.9300903443471968,
+        0.9136885003390935}, {0.931965506795429, 0.9379922328462917}, {
+       0.933251446433931, 0.9602962434296908}}]}}, 
+    {RGBColor[0.2947336, 0.4054232, 0.5678384000000001], Thickness[0.005], 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.790899185691288, 0.7914452692559758}, {1.7907126520948158`,
+        0.8172711220477922}, {1.7909592854250007`, 0.8443219010122276}, {
+       1.7917411538253556`, 0.8728419219231915}, {1.792752052865342, 
+       0.9020982374589559}, {1.7940985157775684`, 0.9322800713035087}, {
+       1.7950536576149643`, 0.9568706816953723}}]}, 
+     {Arrowheads[0.02], 
+      ArrowBox[{{1.7952142480095905`, 0.9610051627455334}, {
+       1.7952831753180796`, 0.9627797312148996}}]}}}},
+  AspectRatio->NCache[
+    Rational[1, 2], 0.5],
+  DisplayFunction->Identity,
+  Frame->{True, True, True, True},
+  FrameLabel->{{
+     FormBox["\"y\"", TraditionalForm], None}, {
+     FormBox["\"x\"", TraditionalForm], None}},
+  FrameStyle->Thickness[0.005],
+  FrameTicks->{{{{0, 
+       FormBox["0", TraditionalForm]}, {0.2, 
+       FormBox["0.2`", TraditionalForm]}, {0.4, 
+       FormBox["0.4`", TraditionalForm]}, {0.6, 
+       FormBox["0.6`", TraditionalForm]}, {0.8, 
+       FormBox["0.8`", TraditionalForm]}, {1, 
+       FormBox["1", TraditionalForm]}}, None}, {{{0, 
+       FormBox["0", TraditionalForm]}, {0.2, 
+       FormBox["0.2`", TraditionalForm]}, {0.4, 
+       FormBox["0.4`", TraditionalForm]}, {0.6, 
+       FormBox["0.6`", TraditionalForm]}, {0.8, 
+       FormBox["0.8`", TraditionalForm]}, {1, 
+       FormBox["1", TraditionalForm]}, {1.2, 
+       FormBox["1.2`", TraditionalForm]}, {1.4, 
+       FormBox["1.4`", TraditionalForm]}, {1.6, 
+       FormBox["1.6`", TraditionalForm]}, {1.8, 
+       FormBox["1.8`", TraditionalForm]}, {2, 
+       FormBox["2", TraditionalForm]}}, None}},
+  FrameTicksStyle->Directive[
+    GrayLevel[0], 36],
+  GridLinesStyle->Directive[
+    GrayLevel[0.5, 0.4]],
+  ImageSize->{Automatic, 543.6523437500001},
+  LabelStyle->Directive[
+    GrayLevel[0], 36],
+  Method->{
+   "DefaultBoundaryStyle" -> Automatic, "TransparentPolygonMesh" -> True},
+  PlotRange->{{-0.05, 2.05}, {-0.05, 1.05}},
+  PlotRangeClipping->True,
+  PlotRangePadding->{{0, 0}, {0, 0}},
+  Ticks->{Automatic, Automatic}]], "Output",
+ CellChangeTimes->{{3.758370609562306*^9, 3.758370636675991*^9}, {
+   3.758370778402834*^9, 3.7583708113230352`*^9}, 3.758370855253269*^9, 
+   3.758370971448834*^9, 3.758371044525756*^9, 3.758371176865765*^9, 
+   3.758372046197204*^9, {3.758372095229434*^9, 3.758372124368279*^9}, 
+   3.7583721627702103`*^9, 3.758372282144899*^9, 3.7583723230118647`*^9, 
+   3.7583726282928267`*^9, 3.7583730654233837`*^9}]
+}, Open  ]]
+},
+WindowSize->{1175, 633},
+WindowMargins->{{-25, Automatic}, {Automatic, 19}},
+FrontEndVersion->"11.0 for Mac OS X x86 (32-bit, 64-bit Kernel) (September \
+21, 2016)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[422, 15, 2942, 82, 75, "Input"],
+Cell[3367, 99, 20019, 401, 61, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[23423, 505, 2679, 71, 117, "Input"],
+Cell[26105, 578, 104742, 1694, 559, "Output"]
+}, Open  ]]
+}
+]
+*)
+

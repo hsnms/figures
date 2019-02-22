@@ -1,0 +1,93 @@
+%\documentclass{article}
+%\usepackage{tikz}
+%\usepackage{pgfplots}
+%\begin{document}
+
+
+
+
+ \def \rl {2*1.4}
+  \def \rh {1*1.4}  
+ % \def \rk {2 and 0.58}
+  \def \i {2*1.4/5.5}
+  \def \a {0.2*1.4}
+     \def \b {0.21*1.4}
+  \def \c {0.08*1.4}
+   \def \d {2.001*1.4}
+  \begin{tikzpicture}
+%\draw (-\rl,\rl) arc (180:0:\rk);
+%\draw[dashed] (-\rl,-\rl) arc (180:0:\rk);
+ \draw[thick](0,\rl)  -- (0,0);
+  \draw[thick](\rl,0)  -- (0,0);
+  \draw[thick](\rl,\rl)   -- (\rl,0);
+\draw[thick](0,\rl) -- (\rl,\rl);
+  \draw[thick, ->] (\rl,0) -- (1.25*\rl,0) node[right] {$r$};
+  \draw[thick,->] (0,\rl) -- (0, 1.25*\rl) node[above] {$z$};
+         \fill [blue!60!red, opacity=0.2] (0,0) -- (\rl,0) -- (\rl,\rl)--(0,\rl)--cycle;
+%\draw [yellow,opacity=0.5] (\rl,\rl-0.21)--(0,\rl-0.21);
+%\fill [yellow,opacity=0.2] (\rl,\rl-0.21)--(0,\rl-0.21)--(0,\rl)--(\rl,\rl)--cycle;   
+  
+ 
+ %number 1%
+ 
+ \foreach \x in {\rl,\rl-\i, \rl-2*\i, \rl-3*\i, \rl-4*\i} {
+\foreach \y in {\rl,\rl-\i, \rl-2*\i, \rl-3*\i, \rl-4*\i} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+\pgfmathsetmacro{\z}{(-\d+\xx)/(-\d+\yy)};
+\pgfmathsetmacro{\zz}{180+atan(\z)};
+ \draw[thick, blue,<-]   (\xx, \yy) -- ++(\zz:\a);
+  }
+  }   
+\foreach \x in {\rl,\rl-\i, \rl-2*\i, \rl-3*\i, \rl-4*\i} {
+\foreach \y in {\rl-5*\i} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+\pgfmathsetmacro{\z}{0.5*(-\d+\xx)/(-\d+\yy)};
+\pgfmathsetmacro{\zz}{180+atan(\z)};
+ \draw[thick, blue,<-]  (\xx, \yy) -- ++(\zz:\a);
+ }
+ }   
+  
+  
+   \foreach \x in {\rl-5*\i} {
+\foreach \y in {\rl,\rl-\i, \rl-2*\i, \rl-3*\i, \rl-4*\i} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+\pgfmathsetmacro{\z}{2*(-\d+\xx)/(-\d+\yy)};
+\pgfmathsetmacro{\zz}{180+atan(\z)};
+ \draw[thick, blue,<-]  (\xx, \yy) -- ++(\zz:\a);
+  }
+  }   
+  
+  \foreach \x in {\rl-5*\i+0.6*\a} {
+  \foreach \y in {\rl-5*\i+0.6*\a} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+\pgfmathsetmacro{\z}{(-\d+\xx)/(-\d+\yy)};
+\pgfmathsetmacro{\zz}{180+atan(\z)};
+ \draw[thick, blue,<-]  (\xx, \yy) -- ++(\zz:0.9*\a);
+  }
+ }   
+  
+  
+  
+    
+\draw[yellow] (\rl-\b,\rl) arc (180: 270:\b);
+\fill[yellow] (\rl-\b,\rl) arc (180: 270:\b)--(\rl,\rl)--cycle;
+\draw[yellow] (\b,0) arc (0: 90:\b);
+\fill[yellow] (\b,0) arc (0: 90:\b)--(0,0)--cycle;
+
+
+\draw[black] (\rl-\c,\rl) arc (180: 270:\c);
+\fill[black] (\rl-\c,\rl) arc (180: 270:\c)--(\rl,\rl)--cycle;
+\draw[black] (\c,0) arc (0: 90:\c);
+\fill[black] (\c,0) arc (0: 90:\c)--(0,0)--cycle;
+
+
+
+     \end{tikzpicture} 
+    % \end{document}
+
+    
+

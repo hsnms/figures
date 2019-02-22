@@ -1,0 +1,276 @@
+%\documentclass{article}
+%\usepackage{tikz}
+%\usepackage{pgfplots}
+%\begin{document}
+
+
+
+
+ \def \rl {2*0.7}
+  \def \rh {1*0.7}  
+    \def \i {2*0.7/5.5}
+  \def \a {0.2*0.7}
+    \def \b {0.21*0.7}
+  \def \c {0.08*0.7}
+  \begin{tikzpicture}
+ \draw[thick](-\rl,\rl)  -- (-\rl,-\rl);
+  \draw[thick](\rl,\rl)   -- (\rl,-\rl);
+\draw[thick](-\rl,\rl) -- (\rl,\rl);
+  \draw[thick](-\rl,-\rl) -- (\rl,-\rl);
+  \draw[thick, ->] (-1.25*\rl,0) -- (1.25*\rl,0) node[right] {$r$};
+  \draw[thick,->] (0, -1.25*\rl) -- (0, 1.25*\rl) node[above] {$z$};
+  
+         \fill [blue!60!red, opacity=0.2] (0,0) -- (\rl,0) -- (\rl,\rl)--(0,\rl)--cycle;
+        \fill [red, opacity=0.2] (0,0,0) -- (\rl,0) -- (\rl,-\rl)--(0,-\rl)--cycle;
+           \fill [red, opacity=0.2] (0,0) -- (-\rl,0) -- (-\rl,\rl)--(0,\rl)--cycle;
+           \fill [red, opacity=0.2] (0,0) -- (-\rl,0) -- (-\rl,-\rl)--(0,-\rl)--cycle;
+      
+           
+ \draw [yellow,opacity=0.5](-\rl+3*\i,\b)--(\rl-3*\i,\b);    
+
+\draw [yellow,opacity=0.5] (-\rl+3*\i,-\b)--(\rl-3*\i,-\b);
+\fill [yellow,opacity=0.3] (-\rl+3*\i,-\b)--(\rl-3*\i,-\b)--(\rl-3*\i,\b)--(-\rl+3*\i,\b)--cycle;
+
+\draw [yellow,opacity=0.5] (\rl,-\rl+\b)--(-\rl,-\rl+\b);
+\fill [yellow,opacity=0.2] (\rl,-\rl+\b)--(-\rl,-\rl+\b)--(-\rl,-\rl)--(\rl,-\rl)--cycle; 
+\draw [yellow,opacity=0.5] (\rl,\rl-\b)--(-\rl,\rl-\b);
+\fill [yellow,opacity=0.2] (\rl,\rl-\b)--(-\rl,\rl-\b)--(-\rl,\rl)--(\rl,\rl)--cycle; 
+
+%\fill [yellow,opacity=0.2] (\rl+0.21,-\rl)  arc (0:180:{0.21+\rl} and {0.48})--cycle;  
+
+    %  \pgfmathsetmacro{\rrrl}{\rl-3*\i+0.08};
+%\pgfmathsetmacro{\rrrll}{(\rl-3*\i+0.08)*0.23};
+%\draw [black,opacity=0.1](-\rl+3*\i-0.08,0) arc (180:0:{\rrrl} and {\rrrll});      
+ %  \pgfmathsetmacro{\rrl}{\rl-3*\i};
+%\pgfmathsetmacro{\rrll}{(\rl-3*\i)*0.19};
+%\draw [black,opacity=0.1] (-\rl+3*\i,-0.08) arc (180:0:{\rrl} and {\rrll});
+%\fill [black,opacity=0.1] (-\rl+3*\i,-0.08) arc (180:0:{\rrl} and {\rrll})--(\rl-3*\i,0.08)-- (\rl-3*\i+0.08,0) arc (0:180:{\rrrl} and {\rrrll})--cycle;   
+ 
+           
+            %number 2%
+   \foreach \x in {-\rl+\i+\a/2, -\rl+2*\i+\a/2}{
+\foreach \y in {\rl-\i, \rl-2*\i, \rl-3*\i, \rl-4*\i} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+\pgfmathsetmacro{\z}{-(\yy)/(\xx+0.6)};
+\pgfmathsetmacro{\zz}{180+atan(\z)};
+ \draw [thick, blue] (\xx, \yy) -- ++(\zz:\a);
+  }
+  }
+
+ 
+ \foreach \x in {-\rl,-\rl+\i, -\rl+2*\i}{
+\foreach \y in {\rl-5*\i} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+\pgfmathsetmacro{\zz}{(\xx+\rl)*40};
+ \draw [thick, blue]  (\xx, \yy) -- ++(\zz:\a);
+ }
+ }   
+  \foreach \x in {-\rl} {
+\foreach \y in {\rl-\i, \rl-2*\i, \rl-3*\i, \rl-4*\i,\rl-5*\i} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+ \draw [thick, blue]  (\xx, \yy) -- ++(0:\a);
+ }
+ }    
+  
+   \foreach \x in {-\rl+3*\i, -\rl+4*\i,-\rl+5*\i} {
+\foreach \y in {\rl,\rl-\i, \rl-2*\i, \rl-3*\i, \rl-4*\i} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+ \draw[thick, blue] (\xx, \yy) -- ++(-90:\a);
+  }
+  }   
+     \foreach \x in {-\rl+\i, -\rl+2*\i, -\rl+3*\i, -\rl+4*\i} {
+\foreach \y in {\rl} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+ \draw [thick, blue] (\xx, \yy) -- ++(-90:\a);
+  }
+  }   
+  \foreach \x in {-\rl+4*\i,-\rl+5*\i} {
+  \foreach \y in {\rl-5*\i} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+ \draw [thick, blue] (\xx, \yy) -- ++(-90:\a-0.05);
+  }
+ }   
+ 
+ %number 1%
+ 
+   \foreach \x in {\rl-\i-\a/2, \rl-2*\i-\a/2}{
+\foreach \y in {\rl-\i, \rl-2*\i, \rl-3*\i, \rl-4*\i} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+\pgfmathsetmacro{\z}{-(\yy)/(\xx-0.6)};
+\pgfmathsetmacro{\zz}{atan(\z)};
+ \draw [thick, blue]  (\xx, \yy) -- ++(\zz:\a);
+  }
+  }
+
+ 
+ \foreach \x in {\rl-\i, \rl-2*\i}{
+\foreach \y in {\rl-5*\i} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+\pgfmathsetmacro{\zz}{180+(\xx-\rl)*40};
+ \draw [thick, blue]  (\xx, \yy) -- ++(\zz:\a);
+ }
+ }   
+  \foreach \x in {\rl} {
+\foreach \y in {\rl-\i, \rl-2*\i, \rl-3*\i, \rl-4*\i,\rl-5*\i} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+ \draw [thick, blue]  (\xx, \yy) -- ++(180:\a);
+ }
+ }    
+  
+   \foreach \x in {\rl-3*\i, \rl-4*\i,\rl-5*\i} {
+\foreach \y in {\rl,\rl-\i, \rl-2*\i, \rl-3*\i, \rl-4*\i} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+ \draw [thick, blue]  (\xx, \yy) -- ++(-90:\a);
+  }
+  }   
+     \foreach \x in {\rl-\i, \rl-2*\i, \rl-3*\i, \rl-4*\i} {
+\foreach \y in {\rl} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+ \draw [thick, blue]  (\xx, \yy) -- ++(-90:\a);
+  }
+  }   
+  \foreach \x in {\rl-4*\i,\rl-5*\i} {
+  \foreach \y in {\rl-5*\i} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+ \draw [thick, blue] (\xx, \yy) -- ++(-90:\a-0.05);
+  }
+ }     
+  
+  
+  
+  %number 3%  
+    \foreach \x in {-\rl+\i+\a/2, -\rl+2*\i+\a/2}{
+\foreach \y in {-\rl+\i, -\rl+2*\i, -\rl+3*\i, -\rl+4*\i} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+\pgfmathsetmacro{\z}{-(\yy)/(\xx+0.6)};
+\pgfmathsetmacro{\zz}{180+atan(\z)};
+ \draw [thick, blue]  (\xx, \yy) -- ++(\zz:\a);
+  }
+  }
+
+ 
+ \foreach \x in {-\rl,-\rl+\i, -\rl+2*\i}{
+\foreach \y in {-\rl+5*\i} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+\pgfmathsetmacro{\zz}{-(\xx+\rl)*40};
+ \draw [thick, blue] (\xx, \yy) -- ++(\zz:\a);
+ }
+ }   
+  \foreach \x in {-\rl} {
+\foreach \y in {-\rl+\i, -\rl+2*\i, -\rl+3*\i, -\rl+4*\i,-\rl+5*\i} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+ \draw [thick, blue]  (\xx, \yy) -- ++(0:\a);
+ }
+ }    
+  
+   \foreach \x in {-\rl+3*\i, -\rl+4*\i,-\rl+5*\i} {
+\foreach \y in {-\rl,-\rl+\i, -\rl+2*\i, -\rl+3*\i, -\rl+4*\i} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+ \draw [thick, blue]  (\xx, \yy) -- ++(90:\a);
+  }
+  }   
+     \foreach \x in {-\rl+\i, -\rl+2*\i, -\rl+3*\i, -\rl+4*\i} {
+\foreach \y in {-\rl} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+ \draw [thick, blue]  (\xx, \yy) -- ++(90:\a);
+  }
+  }   
+  \foreach \x in {-\rl+4*\i,-\rl+5*\i} {
+  \foreach \y in {-\rl+5*\i} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+ \draw [thick, blue] (\xx, \yy) -- ++(90:\a-0.05);
+  }
+ }    
+   
+  %number 4%
+  \foreach \x in {\rl-\i-\a/2, \rl-2*\i-\a/2}{
+\foreach \y in {-\rl+\i, -\rl+2*\i, -\rl+3*\i, -\rl+4*\i} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+\pgfmathsetmacro{\z}{-(\yy)/(\xx-0.6)};
+\pgfmathsetmacro{\zz}{atan(\z)};
+ \draw [thick, blue]  (\xx, \yy) -- ++(\zz:\a);
+  }
+  }
+
+ 
+ \foreach \x in {\rl-\i, \rl-2*\i}{
+\foreach \y in {-\rl+5*\i} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+\pgfmathsetmacro{\zz}{-180-(\xx-\rl)*40};
+ \draw [thick, blue]  (\xx, \yy) -- ++(\zz:\a);
+ }
+ }   
+  \foreach \x in {\rl} {
+\foreach \y in {-\rl+\i, -\rl+2*\i, -\rl+3*\i, -\rl+4*\i,-\rl+5*\i} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+ \draw [thick, blue]  (\xx, \yy) -- ++(180:\a);
+ }
+ }    
+  
+   \foreach \x in {\rl-3*\i, \rl-4*\i,\rl-5*\i} {
+\foreach \y in {-\rl,-\rl+\i, -\rl+2*\i, -\rl+3*\i, -\rl+4*\i} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+ \draw [thick, blue] (\xx, \yy) -- ++(90:\a);
+  }
+  }   
+     \foreach \x in {\rl-\i, \rl-2*\i, \rl-3*\i, \rl-4*\i} {
+\foreach \y in {-\rl} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+ \draw [thick, blue]  (\xx, \yy) -- ++(90:\a);
+  }
+  }   
+  \foreach \x in {\rl-4*\i,\rl-5*\i} {
+  \foreach \y in {-\rl+5*\i} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+ \draw [thick, blue] (\xx, \yy) -- ++(90:\a-0.05);
+  }
+ }     
+ \filldraw[yellow] (-\rl+3*\i,0) circle (\b);
+%\node at (-\rl+3*\i,0) {\textbullet};   
+ \filldraw[black] (-\rl+3*\i,0) circle (\c);
+ \filldraw[yellow] (\rl-3*\i,0) circle (\b);
+%\node at (\rl-3*\i,0) {\textbullet};   
+ \filldraw[black] (\rl-3*\i,0) circle (\c);
+\draw[yellow] (\rl-\b,\rl) arc (180: 270:\b);
+\fill[yellow] (\rl-\b,\rl) arc (180: 270:\b)--(\rl,\rl)--cycle;
+\fill[yellow] (-\rl,\rl-\b) arc (270: 360:\b)--(-\rl,\rl)--cycle;
+\draw[yellow] (-\rl+\b,-\rl) arc (0: 90:\b);
+\fill[yellow] (-\rl+\b,-\rl) arc (0: 90:\b)--(-\rl,-\rl)--cycle;
+\draw[yellow] (\rl,-\rl+\b) arc (90: 180:\b);
+\fill[yellow] (\rl,-\rl+\b) arc (90: 180:\b)--(\rl,-\rl)--cycle;
+
+\draw[black] (\rl-\c,\rl) arc (180: 270:\c);
+\fill[black] (\rl-\c,\rl) arc (180: 270:\c)--(\rl,\rl)--cycle;
+\draw[black] (-\rl,\rl-\c) arc (270: 360:\c);
+\fill[black] (-\rl,\rl-\c) arc (270: 360:\c)--(-\rl,\rl)--cycle;
+\draw[black] (-\rl+\c,-\rl) arc (0: 90:\c);
+\fill[black] (-\rl+\c,-\rl) arc (0: 90:\c)--(-\rl,-\rl)--cycle;
+\draw[black] (\rl,-\rl+\c) arc (90: 180:\c);
+\fill[black] (\rl,-\rl+\c) arc (90: 180:\c)--(\rl,-\rl)--cycle;
+   
+ \end{tikzpicture}
+    % \end{document}

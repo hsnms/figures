@@ -1,0 +1,125 @@
+%\documentclass{article}
+%\usepackage{tikz}
+%\usepackage{pgfplots}
+%\begin{document}
+
+
+
+
+ \def \rl {4*0.7}
+ \def \i {3*0.7/5.5}
+  \def \a {0.35*0.7} %length of the arrow
+  \def \aa {0.84*0.7}%length of the highly distorted region
+  \def \aaa{0.32*0.7}% length of the core
+  \def \b{0.08*0.7}%distance between the arrow and the highly distorted region
+   \def \bb {(4-0.84-2*0.08)*0.7/6} % arrows on the right side (\rl-\aa-2*\b)/6
+    \def \cc {(4-0.84-0.35)*0.7/5} %arrows on the bottom side (\rl-\aa-\a)/5
+   \def \dd {(4-0.35)*0.7/6} % arrows on the left side (\rl-\a)/6
+     
+  \begin{tikzpicture}
+ \draw[thick](0,\rl)  -- (0,0);
+  \draw[thick](\rl,0)  -- (0,0);
+  \draw[thick](\rl,\rl)   -- (\rl,0);
+\draw[thick](0,\rl) -- (\rl,\rl);
+  \draw[thick,>=stealth, ->] (\rl,0) -- (1.25*\rl,0) node[right] {$r$};
+  \draw[thick,>=stealth,->] (0,\rl) -- (0, 1.25*\rl) node[above] {$z$};
+        % \fill [blue!60!red, opacity=0.2] (0,0) -- (\rl,0) -- (\rl,\rl)--(0,\rl)--cycle;
+
+      
+           
+ 
+ 
+ 
+ \foreach \x in {0.5*\rl+\aa}{
+\foreach \y in {\b} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+ \draw [>=stealth,thick,red,->]  (\xx, \yy) -- ++(0:\a);
+ }
+ }   
+ 
+  \foreach \x in {\rl} {
+\foreach \y in {\rl-\aa-\b, \rl-\aa-\b-\bb, \rl-\aa-\b-2*\bb, \rl-\aa-\b-3*\bb, \rl-\aa-\b-4*\bb, \rl-\aa-\b-5*\bb,\rl-\aa-\b-6*\bb} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+ \draw[>=stealth,thick,red,<-] (\xx, \yy) -- ++(180:\a);
+ }
+ }   
+
+     \foreach \x in {\b} {
+\foreach \y in {\rl, \rl-\dd,\rl-2*\dd,\rl-3*\dd,\rl-4*\dd,\rl-5*\dd,\rl-6*\dd} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+ \draw [>=stealth,thick,red,<-]  (\xx, \yy) -- ++(-90:\a);
+  }
+  }   
+  
+     \foreach \x in {\rl-\aa-\b, \rl-\aa-\b-\bb, \rl-\aa-\b-2*\bb, \rl-\aa-\b-3*\bb, \rl-\aa-\b-4*\bb, \rl-\aa-\b-5*\bb} {
+\foreach \y in {\rl} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+ \draw[>=stealth,thick,red,<-] (\xx, \yy) -- ++(-90:\a);
+  }
+  }   
+  
+ \foreach \x in {0.5*\rl-\aa-\b,0.25*\rl-0.5*\aa} {
+\foreach \y in {0} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+ \draw[>=stealth,thick,red,->] (\xx, \yy) -- ++(90:\a);
+  }
+  }     
+  
+  
+  \foreach \x in {\rl-cos(45)*\aa} {
+  \foreach \y in {\rl-sin(45)*\aa} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+ \draw[>=stealth,thick,red,<-](\xx, \yy) -- ++(225:\a);
+  }
+ }     
+    \foreach \x in {0.707*\aa} {
+  \foreach \y in {cos(45)*\aa} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+ \draw[>=stealth,thick,red,<-](0.5*\rl, \yy-0.5*\a/2) -- ++(135:\a);
+  }
+ }     
+  
+  
+  
+  
+\draw[thick,black] (\rl-\aa,\rl) arc (180: 270:\aa);
+\draw[thick,black] (0.5*\rl+\aa,0) arc (0: 180:\aa);
+\fill[yellow] (\rl-\aa,\rl) arc (180: 270:\aa)--(\rl,\rl)--cycle;
+\fill[yellow] (0.5*\rl+\aa,0) arc (0: 180:\aa)--cycle;
+
+\draw[black] (\rl-\aaa,\rl) arc (180: 270:\aaa);
+\fill[black] (\rl-\aaa,\rl) arc (180: 270:\aaa)--(\rl,\rl)--cycle;
+\draw[black] (0.5*\rl+\aaa,0) arc (0: 180:\aaa);
+\fill[black] (0.5*\rl+\aaa,0) arc (0: 180:\aaa)--cycle;
+
+ \foreach \x in {cos(45)*\aa} {
+  \foreach \y in {sin(45)*\aa} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+ \draw[>=stealth,thick,red,->](0.5*\rl, \aa) -- ++(45:\a);
+  }
+ }     
+  \foreach \x in {cos(135)*\aa} {
+  \foreach \y in {sin(135)*\aa} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+ \draw[>=stealth,thick,red,->](0.5*\rl+\xx, \yy) -- ++(67.5:\a);
+  }
+ }   
+   \foreach \x in {cos(45)*\aa} {
+  \foreach \y in {sin(45)*\aa} {
+\pgfmathsetmacro{\xx}{\x};
+\pgfmathsetmacro{\yy}{\y};
+ \draw[>=stealth,thick,red,->](0.5*\rl+\xx, \yy) -- ++(22.5:\a);
+  }
+ }    
+   
+ \end{tikzpicture}
+     %\end{document}

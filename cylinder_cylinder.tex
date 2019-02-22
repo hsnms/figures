@@ -1,0 +1,46 @@
+%\documentclass{standalone}
+%\usepackage{tikz}
+%\usepackage{pgfplots}
+%\begin{document}
+        
+        
+        
+         \def \rl {2}
+  \def \rh {1}
+\tikzset{math3d/.style= {x={(-0.7cm,-0.2cm)}, y={(0.7cm,-0.2cm)}, z={(0cm,1cm)}}}
+\begin{tikzpicture}[math3d]
+    \newcommand{\n}{11}
+    \newcommand{\h}{2}
+  %  \newcommand{\rl}{2}
+    %\newcommand{\rh}{1} 
+ \path[draw,fill=white, thick] plot[domain=0:2*pi,samples=4*\n] ({\rl*cos(\x r)}, {\rl*sin(\x r)}, \h);
+  \path[draw,fill=white, thick] plot[domain=-pi/4:3*pi/4,samples=4*\n] ({\rl*cos(\x r)}, {\rl*sin(\x r)}, -\h);
+   \path[draw,fill=white, dashed] plot[domain=3*pi/4:pi,samples=4*\n] ({\rl*cos(\x r)}, {\rl*sin(\x r)}, -\h);
+         \path[draw,fill=white, dashed] plot[domain=6*pi/4:7*pi/4,samples=4*\n] ({\rl*cos(\x r)}, {\rl*sin(\x r)}, -\h);
+            \path[draw,fill=white, dashed,thick] plot[domain=-pi/4:3*pi/4,samples=4*\n] ({\rl*cos(\x r)}, {\rl*sin(\x r)}, 0);
+         \path[draw,fill=white, dashed] plot[domain=3*pi/4:pi,samples=4*\n] ({\rl*cos(\x r)}, {\rl*sin(\x r)}, 0);
+         \path[draw,fill=white, dashed] plot[domain=6*pi/4:7*pi/4,samples=4*\n] ({\rl*cos(\x r)}, {\rl*sin(\x r)}, 0);
+         
+       \draw [dashed,-](0,0,0) -- (\rl,0,0);
+\draw [thick](0,\rl,\h) -- (0,-\rl,\h);
+\draw [dashed,-](0,\rl,-\h) -- (0,-\rl,-\h);
+\draw [dashed,-](0,-\rl,\h) -- (0,-\rl,-\h);
+\draw[thick] (0,\rl,\h) -- (0,\rl,-\h);
+\draw[thick] (\rl*0.707, -\rl*0.707, \h)--(\rl*0.707, -\rl*0.707, -\h);
+\draw[thick] (-\rl*0.707, \rl*0.707, \h)--(-\rl*0.707, \rl*0.707, -\h);
+\draw[->] (\rl,0,0) -- (\rl+2,0,0) node[below] {$x$};
+       \draw[dashed,-] (0,0,0) -- (0,\rl,0);
+         \draw [dashed,-](0,0,0) -- (0,-\rl,0);
+         \draw [->](0,\rl,0) -- (0,\rl+2,0) node[below] {$y$};
+       \draw [dashed,-](0,0,0) -- (0,0,\h);  
+       \draw [dashed,-](0,0,0) -- (0,0,-\h);            
+        \draw[->](0,0,\rl) -- (0,0,\rl+1.5) node[right] {$z$};
+
+         \fill [blue!60!red, opacity=0.2] (0,0,0) -- (0,\rl,0) -- (0,\rl,\h)--(0,0,\h)--cycle;
+        \fill [red, opacity=0.2] (0,0,0) -- (0,\rl,0) -- (0,\rl,-\h)--(0,0,-\h)--cycle;
+           \fill [red, opacity=0.2] (0,0,0) -- (0,-\rl,0) -- (0,-\rl,\h)--(0,0,\h)--cycle;
+           \fill [red, opacity=0.2] (0,0,0) -- (0,-\rl,0) -- (0,-\rl,-\h)--(0,0,-\h)--cycle;
+   
+   
+        \end{tikzpicture}
+       % \end{document}
